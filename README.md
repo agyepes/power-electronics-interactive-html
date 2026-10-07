@@ -32,6 +32,10 @@ The author used ChatGPT (OpenAI) and Claude (Anthropic) as AI tools to help gene
 
 The `collection` folder contains exactly the downloadable educational package. Repository citation metadata and publishing configuration are outside it. [MANIFEST.json](collection/MANIFEST.json) and [SHA256SUMS.txt](collection/SHA256SUMS.txt) identify the exact package files. Git is configured to preserve their bytes.
 
-GitHub Pages publishes the contents of `collection` without a site generator or modification. The publication workflow verifies the complete filename set and checksums before deployment. The version 1.0 release and ZIP are retained unchanged; later corrections or additions receive new releases. Keep public HTML basenames stable. Dedicated inverter and DC/DC laboratories are planned for a future collection version.
+GitHub Pages publishes the exact contents of `collection` through its built-in deployment workflow. The `gh-pages` publishing branch contains those files unchanged, plus separate publishing controls that disable Jekyll and Git newline conversion. The downloadable ZIP contains only the 27 collection files.
+
+The publishing script verifies the complete filename set, checksums and committed source bytes before updating that branch. To publish an intentionally reviewed update, run `python scripts/publish_collection.py` from `main` with Git and GitHub CLI available and authenticated. This explicitly updates the public website; a push to `main` alone does not deploy it. Record any revised collection as a new release before broad distribution.
+
+The version 1.0 release and ZIP are retained unchanged; later corrections or additions receive new releases. Keep public HTML basenames stable. Dedicated inverter and DC/DC laboratories are planned for a future collection version.
 
 Original explanatory text in this README uses CC BY 4.0. Original publishing/verification code uses MIT; retain its notices when reusing it.
