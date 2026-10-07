@@ -1,0 +1,10 @@
+# Preserve the released package byte for byte, including its checksum list.
+collection/** -text
+
+# Repository-only documentation and publishing configuration use LF.
+/.gitattributes text eol=lf
+/.gitignore text eol=lf
+/README.md text eol=lf
+/CITATION.cff text eol=lf
+/.github/** text eol=lf
+/scripts/** text eol=lf

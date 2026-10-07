@@ -1,0 +1,100 @@
+Interactive HTML Learning Resources for Power Electronics
+Zenodo metadata prepared locally for public GitHub collection version 1.0; Zenodo deposit pending
+
+TITLE
+Interactive HTML Learning Resources for Power Electronics
+
+CREATOR
+Name: Alejandro Gómez Yepes
+Given name: Alejandro
+Family name: Gómez Yepes
+Affiliation: Universidade de Vigo
+
+VERSION
+1.0
+
+RESOURCE TYPE
+Suggested type: Lesson (educational resource)
+
+LANGUAGES
+English; Spanish; Galician
+
+KEYWORDS
+Power electronics; interactive learning; HTML; educational resources; power semiconductor devices; control and protection; RMS; Fourier harmonics; three-phase systems; uncontrolled rectifiers; controlled rectifiers
+
+DESCRIPTION
+Interactive HTML Learning Resources for Power Electronics is a collection of thirteen interactive HTML laboratories by Alejandro Gómez Yepes, Universidade de Vigo, for university-level learning of power electronics, instructor demonstrations, guided activities and independent study.
+
+Version 1.0 contains laboratories on power semiconductor devices; control and protection in power electronics; mean and RMS value calculation; Fourier harmonic decomposition; three-phase electrical system review; four uncontrolled rectifiers; and four controlled rectifiers. Each rectifier group includes single-phase half-wave, single-phase full-wave, three-phase half-wave and three-phase full-wave circuits.
+
+The interfaces are available in English, Spanish and Galician. The HTML files contain their own interface, styling and scripts. Start from index.html to choose a laboratory; individual laboratories can also be opened directly in a modern browser with JavaScript enabled. Keep the delivered HTML filenames together to preserve the index links and links between laboratories.
+
+Prerequisites are basic circuit analysis, resistor/inductor/capacitor behavior, elementary algebra and trigonometry, and sinusoidal AC signals. The three review laboratories support revision of mean/RMS values, Fourier harmonics and three-phase systems. Learners are encouraged to read the explanations and model assumptions, predict outcomes, vary parameters, compare plots and calculated values, and explain their observations. Activities, questions and export tools vary by laboratory. Twelve laboratories retain notes and assessment records only in local browser storage when it is available; the RMS/mean laboratory (03) keeps them only in the open page. Export a copy before reloading, closing, moving or replacing files. Numerical CSVs and self-assessment TXT records are separate in Fourier and the rectifier laboratories; offline and hosted browser work does not automatically transfer or synchronise.
+
+Dedicated laboratories on inverters and DC/DC converters are planned for future versions. Version 1.0 contains the thirteen laboratories described above. Some controlled-rectifier laboratories already address inverting operation under suitable circuit conditions. The package includes a browser-readable documentation page, user guide, collection description and model limits, citation instructions, change log, exact file manifest, SHA-256 checksums and licence notices.
+
+Original educational content and diagrams are licensed under CC BY 4.0; original implementation code is licensed under MIT. Educational text and questions embedded in scripts remain CC BY 4.0. The licences apply to different components, not as alternatives for complete HTML files. Third-party material retains its own terms. The release package includes the full terms and scope statement.
+
+The author used ChatGPT (OpenAI) and Claude (Anthropic) as AI tools to help generate and refine the HTML resources. Their use is acknowledged in the HTML files and does not imply company collaboration or endorsement. Alejandro Gómez Yepes is the named author; Universidade de Vigo is his affiliation.
+
+LICENCES AND RIGHTS
+Creative Commons Attribution 4.0 International (CC-BY-4.0): original educational content and diagrams, including educational text and question-bank material embedded in scripts, original explanatory documentation and collection metadata.
+MIT License (MIT): original implementation code, comprising JavaScript application logic, CSS and structural HTML. Diagram-generation code is MIT; original educational visual content is CC BY 4.0.
+These licences apply to different components, not as alternative licences for complete HTML files. The grants cover only rights the author is entitled to license. Third-party material and linked references retain their own terms.
+Both licences permit commercial reuse subject to their terms. Preserve the content attribution, licence link and change notices required by CC BY 4.0, and the copyright and permission notice required by MIT. See LICENSING.txt, LICENSE-CONTENT.txt, LICENSE-CODE.txt and THIRD_PARTY_NOTICES.txt in the release package.
+When entering the Zenodo record, add both licences and include these component-specific scopes in the description or rights statement. Verify the saved record matches the files before publication.
+
+RELEASE CONTENTS
+01 - Power Semiconductor Devices.html
+02 - Control and Protection in Power Electronics.html
+03 - RMS and Mean Value Calculation Review.html
+04 - Fourier Harmonic Decomposition.html
+05 - Three-Phase Electrical System Review.html
+06 - Uncontrolled Rectifiers - Single-Phase Half-Wave.html
+07 - Uncontrolled Rectifiers - Single-Phase Full-Wave.html
+08 - Uncontrolled Rectifiers - Three-Phase Half-Wave.html
+09 - Uncontrolled Rectifiers - Three-Phase Full-Wave.html
+10 - Controlled Rectifiers - Single-Phase Half-Wave.html
+11 - Controlled Rectifiers - Single-Phase Full-Wave.html
+12 - Controlled Rectifiers - Three-Phase Half-Wave.html
+13 - Controlled Rectifiers - Three-Phase Full-Wave.html
+index.html
+DOCUMENTATION.html
+README.md
+USER_GUIDE.md
+COLLECTION_DESCRIPTION.md
+CITATION.md
+CHANGELOG.md
+LICENSING.txt
+LICENSE-CONTENT.txt
+LICENSE-CODE.txt
+THIRD_PARTY_NOTICES.txt
+ZENODO_METADATA.txt
+MANIFEST.json
+SHA256SUMS.txt
+
+KNOWN PUBLICATION FIELDS
+First public release date: 2026-10-07 (GitHub publication).
+Public homepage URL: https://agyepes.github.io/power-electronics-interactive-html/
+Public GitHub repository: https://github.com/agyepes/power-electronics-interactive-html
+Version-specific GitHub release: https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0
+Downloadable release archive: https://github.com/agyepes/power-electronics-interactive-html/releases/download/v1.0/Interactive_HTML_Learning_Resources_for_Power_Electronics_v1.0.zip
+Zenodo deposit status: pending; no uploaded draft or published Zenodo record is claimed.
+Version DOI, concept DOI and Zenodo record URL: pending; enter only the actual identifiers returned by Zenodo and verify the saved record.
+
+CONSISTENCY FOR THE FUTURE ZENODO DEPOSIT
+Use the exact collection title, creator, affiliation and version shown above. Preserve the first public release date of 2026-10-07; do not substitute the later upload/draft date. Upload the identical version 1.0 archive and verify its checksum. Add both licences with the component-specific scopes stated above. Record the website and version-specific GitHub release as related resources.
+The version 1.0 ZIP is a fixed public release and must not be replaced just to add a DOI. A later DOI can be added to repository citation metadata and release notes while the archived package remains unchanged. Revised package content belongs to a new collection release with regenerated integrity files.
+
+OFFICIAL ZENODO FIELD GUIDANCE
+https://help.zenodo.org/docs/deposit/describe-records/titles/
+https://help.zenodo.org/docs/deposit/describe-records/creators/
+https://help.zenodo.org/docs/deposit/describe-records/resource-type/
+https://help.zenodo.org/docs/deposit/describe-records/publication-date/
+https://help.zenodo.org/docs/deposit/describe-records/licenses/
+https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/
+https://help.zenodo.org/docs/deposit/manage-versions/
+https://support.zenodo.org/help/en-gb/1-upload-deposit/97-what-is-doi-versioning
+https://developers.zenodo.org/#deposit-metadata
+
+This file is a local metadata preparation for entering the Zenodo form. It is not an uploaded draft, an API payload or a published Zenodo record.

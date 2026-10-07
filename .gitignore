@@ -1,0 +1,7 @@
+# Keep local work and generated archives outside the public source tree.
+__pycache__/
+*.pyc
+*.zip
+*.crdownload
+.venv/
+node_modules/

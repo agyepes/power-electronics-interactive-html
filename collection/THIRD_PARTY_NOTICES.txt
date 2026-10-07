@@ -1,0 +1,84 @@
+Interactive HTML Learning Resources for Power Electronics
+Third-party references and notices - collection version 1.0
+
+The collection licences apply to the original components described in
+LICENSING.txt. External reference works and other third-party material
+retain their own terms; linking to a work does not relicense it.
+
+The references below are those identified in the distributed HTML source.
+They are supplementary technical sources, not bundled runtime libraries.
+The laboratory citations and descriptions are retained in their original
+locations and languages. A reference may appear in more than one laboratory.
+
+GRAPHICAL REFERENCE NOTES
+
+The control-and-protection implementation records graphical references
+checked for circuit-symbol conventions: ST TN1215/TYN612 (SCR),
+ST AN316 Figure 1 (TVS polarity), TI SLUA618A Figure 10 (complementary
+driver), and KiCad Device.lib (fuse/MOV conventions). This is a source
+acknowledgement, not a grant of rights in those reference works or libraries.
+No KiCad library file is included in the collection.
+
+The Fourier laboratory cites MathWorks THD documentation for a convention
+and states that it calculates its ratios directly, without using that
+reference algorithm. MathWorks software is not included.
+
+EXTERNAL TECHNICAL REFERENCES BY LABORATORY
+
+01 - Power Semiconductor Devices.html
+- https://assets.wolfspeed.com/uploads/2023/10/Wolfspeed_C3D02060E_data_sheet.pdf
+- https://www.infineon.com/product-information/parallelingpowermosfets
+- https://www.infineon.com/technology/mosfets
+- https://www.st.com/resource/en/application_note/an302-thyristors-and-triacs-holding-current--an-important-parameter-stmicroelectronics.pdf
+- https://www.st.com/resource/en/application_note/an303-thyristors-and-triacs-latching-current-stmicroelectronics.pdf
+- https://www.st.com/resource/en/application_note/an4608-how-to-select-the-right-thyristor-scr-for-your-application-stmicroelectronics.pdf
+- https://www.ti.com/lit/an/sluaat8/sluaat8.pdf
+- https://www.ti.com/lit/slua618
+
+02 - Control and Protection in Power Electronics.html
+- https://assets.danfoss.com/documents/latest/444227/AB501651281507en-000201.pdf
+- https://assets.nexperia.com/documents/application-note/AN11160.pdf
+- https://www.st.com/resource/en/application_note/an303-thyristors-and-triacs-latching-current-stmicroelectronics.pdf
+- https://www.st.com/resource/en/application_note/an316-tvs-clamping-protection-mode-stmicroelectronics.pdf
+- https://www.ti.com/lit/slua618
+
+03 - RMS and Mean Value Calculation Review.html
+- https://www.keysight.com/at/content/lib/resources/training-materials/tip-1-understand-true-rms-measurements-458364.html
+- https://www.keysight.com/ie/en/lib/resources/training-materials/tip-2-measuring-an-ac-signal-with-a-dc-offset-458371.html
+- https://www.keysight.com/us/content/lib/resources/training-materials/tip-1-understand-true-rms-measurements-458364.html
+
+04 - Fourier Harmonic Decomposition.html
+- https://mathworld.wolfram.com/FourierSeries.html
+- https://mathworld.wolfram.com/ParsevalsTheorem.html
+- https://www.mathworks.com/help/signal/ref/thd.html
+
+08 - Uncontrolled Rectifiers - Three-Phase Half-Wave.html
+- https://uomus.edu.iq/img/lectures21/MUCLecture_2022_12108378.pdf
+- https://www.monolithicpower.com/en/learning/mpscholar/power-electronics/ac-dc-converters/uncontrolled-rectifiers
+
+09 - Uncontrolled Rectifiers - Three-Phase Full-Wave.html
+- https://www.monolithicpower.com/en/learning/mpscholar/power-electronics/ac-dc-converters/uncontrolled-rectifiers
+
+10 - Controlled Rectifiers - Single-Phase Half-Wave.html
+- https://www.st.com/resource/en/application_note/cd00003854-thyristors-and-triacs-latching-current-stmicroelectronics.pdf
+
+11 - Controlled Rectifiers - Single-Phase Full-Wave.html
+- https://www.st.com/resource/en/application_note/cd00003854-thyristors-and-triacs-latching-current-stmicroelectronics.pdf
+
+12 - Controlled Rectifiers - Three-Phase Half-Wave.html
+- https://www.st.com/resource/en/application_note/cd00003854-thyristors-and-triacs-latching-current-stmicroelectronics.pdf
+
+13 - Controlled Rectifiers - Three-Phase Full-Wave.html
+- https://www.st.com/resource/en/application_note/cd00003854-thyristors-and-triacs-latching-current-stmicroelectronics.pdf
+
+OTHER NAMES AND CREDITS
+
+Manufacturer, university, software and service names in the laboratories
+identify referenced products, works or assistance. These names and marks
+remain with their respective holders. The grants do not imply endorsement.
+
+ChatGPT (OpenAI) and Claude (Anthropic) remain acknowledged for development
+assistance in the individual HTML files.
+
+The W3C SVG and MathML namespace identifiers in the source are markup
+identifiers. They are not downloaded assets or runtime dependencies.
