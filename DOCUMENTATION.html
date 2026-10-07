@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Interactive HTML Learning Resources for Power Electronics — User guide and documentation</title>
+<meta content="Alejandro Gómez Yepes" name="author"/><meta content="Universidade de Vigo" name="author-affiliation"/>
+<meta content="Interactive HTML Learning Resources for Power Electronics" name="collection-title"/><meta content="1.0" name="collection-version"/>
+<meta content="published-github-zenodo-pending" name="publication-status"/>
+<meta content="CC-BY-4.0" name="content-license"/><meta content="MIT" name="code-license"/>
+<meta content="User guide, module description, model limits, licences, citation guidance and change log for thirteen interactive Power Electronics laboratories." name="description"/>
+<!-- Original explanatory content: CC BY 4.0. Original HTML/CSS implementation: MIT.
+MIT License
+
+Copyright (c) 2026 Alejandro Gómez Yepes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
+associated documentation files (the "Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the
+following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial
+portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
+EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+<style>*{box-sizing:border-box}
+:root{color-scheme:light dark;--bg:#f3f6f8;--panel:#fff;--ink:#182e40;--muted:#405768;--line:#c5d2db;--accent:#096a75;--code:#edf3f6}
+@media(prefers-color-scheme:dark){:root{--bg:#111c24;--panel:#192833;--ink:#e8f0f5;--muted:#c0d0dd;--line:#435868;--accent:#7edbe3;--code:#203440}}
+html{scroll-behavior:auto}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}
+.shell{max-width:1080px;margin:auto;padding:28px}header,.doc-section{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:22px}
+h1{font-size:clamp(1.65rem,3.3vw,2.6rem);line-height:1.18;margin:14px 0}h2{font-size:1.65rem;line-height:1.3;margin:0 0 20px}h3{font-size:1.25rem;line-height:1.35;margin:30px 0 12px}
+p{margin:12px 0}a{color:var(--accent);text-decoration-thickness:1.5px;text-underline-offset:3px;overflow-wrap:anywhere}
+a:focus-visible,.table-scroll:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.eyebrow{font-weight:700;color:var(--muted);font-size:.85rem;letter-spacing:.06em}
+.identity,.status{color:var(--muted)}.status{border-left:4px solid var(--accent);padding:6px 14px}.navigation{display:flex;gap:9px;flex-wrap:wrap;margin:20px 0 4px}.navigation a,.home{display:inline-block;min-height:42px;border:1px solid var(--line);border-radius:8px;padding:7px 11px;font-weight:650}
+ul,ol{padding-left:1.5rem}li{margin:8px 0}blockquote{margin:20px 0;border-left:4px solid var(--accent);padding:4px 18px;background:var(--code);overflow-wrap:anywhere}
+pre{background:var(--code);border:1px solid var(--line);border-radius:8px;padding:16px;white-space:pre-wrap;overflow-wrap:anywhere}code{font:.9em/1.5 ui-monospace,Consolas,monospace;overflow-wrap:anywhere}
+.table-scroll{overflow-x:auto;margin:20px 0;border:1px solid var(--line);border-radius:8px}table{width:100%;border-collapse:collapse;min-width:780px;font-size:.92rem}th,td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid var(--line);overflow-wrap:anywhere}th{background:var(--code);font-weight:750}tr:last-child td{border-bottom:0}th:first-child,td:first-child{min-width:125px}.table-help{font-size:.85rem;color:var(--muted);margin-bottom:0}.doc-section{scroll-margin-top:16px}footer{color:var(--muted);padding:6px 2px;font-size:.92rem}
+.skip{position:absolute;left:8px;top:-100px;z-index:2;background:var(--panel);padding:12px}.skip:focus{top:8px}
+@media(max-width:600px){.shell{padding:12px}header,.doc-section{padding:18px 14px;border-radius:9px}body{font-size:15px}h2{font-size:1.45rem}h3{font-size:1.15rem}pre{padding:12px}}
+@page{size:A4;margin:14mm}
+@media print{:root{color-scheme:light;--bg:#fff;--panel:#fff;--ink:#172b3c;--muted:#405563;--line:#bdcbd4;--accent:#075c67;--code:#f0f4f6}
+body{font-size:9.5pt;line-height:1.45;background:#fff}.shell{padding:0;max-width:none}header,.doc-section{border:0;border-radius:0;padding:0;margin:0 0 20px}.navigation,.home,.skip,.table-help{display:none}h1{font-size:22pt}h2{font-size:16pt;margin-top:22px}h3{font-size:12pt;margin-top:16px}h1,h2,h3{break-after:avoid}p,li{orphans:3;widows:3}blockquote{padding:4px 12px}pre{break-inside:avoid;font-size:8.5pt}.table-scroll{overflow:visible;border-radius:0;break-inside:auto}table{min-width:0;table-layout:fixed;font-size:8.2pt}th,td{padding:6px;min-width:0!important}thead{display:table-header-group}tr{break-inside:avoid}a{color:var(--accent)}.doc-section:last-child{margin-bottom:4px}footer{font-size:8.5pt;break-inside:avoid;padding:0}footer p{margin:2px 0}}
+</style><meta content="2026-10-07" name="publication-date"/><meta content="https://agyepes.github.io/power-electronics-interactive-html/" name="public-homepage-url"/></head><body><a class="skip" href="#user-guide">Skip to the user guide</a>
+<div class="shell"><header><span class="eyebrow">USER GUIDE AND COLLECTION DOCUMENTATION</span>
+<h1>Interactive HTML Learning Resources for Power Electronics</h1><p class="identity">Alejandro Gómez Yepes · Universidade de Vigo · Collection version 1.0</p>
+<p class="status">First public release: October 7, 2026. Zenodo deposit and DOI: pending. <a href="https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0">Version 1.0 release and download</a></p>
+<p>Open the laboratories from the homepage. Use this guide to choose exports, preserve student work and understand the collection's scope.</p>
+<a class="home" href="index.html">Open the laboratory homepage</a><a class="home" href="https://github.com/agyepes/power-electronics-interactive-html/releases/download/v1.0/Interactive_HTML_Learning_Resources_for_Power_Electronics_v1.0.zip">Download collection (ZIP)</a> <nav aria-label="Documentation sections" class="navigation"><a href="#user-guide">User guide</a><a href="#collection-description">Collection description</a><a href="#licences">Licences</a><a href="#citation">Citation instructions</a><a href="#change-log">Change log</a><a href="#package-files">Package files</a></nav></header>
+<main><section aria-labelledby="user-guide-heading" class="doc-section" id="user-guide"><h2 id="user-guide-heading">User guide</h2><p>Start from <a href="index.html">index.html</a>. The 13 laboratories run in a browser and can be used online or from an extracted download. Keep an exported copy of your work: browser saving is convenient, but it is not a portable backup.</p>
+<h3 id="user-guide-open-the-collection">Open the collection</h3>
+<p>For online use, open the <a href="https://agyepes.github.io/power-electronics-interactive-html/">collection website</a>. For offline use, obtain the <a href="https://github.com/agyepes/power-electronics-interactive-html/releases/download/v1.0/Interactive_HTML_Learning_Resources_for_Power_Electronics_v1.0.zip">complete version 1.0 ZIP</a> from the <a href="https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0">GitHub release</a> and follow these steps:</p>
+<ol>
+<li>Extract the whole downloaded collection into a normal folder before opening it. Keep the delivered filenames and all files together. Opening an HTML inside a ZIP preview can prevent the collection links from working.</li>
+<li>Open <a href="index.html">index.html</a> in a browser with JavaScript enabled. Use <strong>Go to the laboratories</strong> and choose a resource. You can also open a numbered HTML directly.</li>
+<li>Select <strong>EN</strong>, <strong>ES</strong> or <strong>GL</strong> inside the laboratory. The interfaces provide English, Spanish and Galician. On a first opening without a saved preference, they start in English; each laboratory can remember its own last language when storage is available.</li>
+<li>Read the model assumptions, predict an outcome, change one parameter, and explain the resulting plots and values. Choose a learning level where the laboratory offers one; higher levels reveal additional material.</li>
+<li>Answer the self-assessment before revealing its solution. Questions use the conditions stated in their wording, independently of the current slider settings.</li>
+<li>Export your work before leaving, reloading, clearing browser data or changing files. Open the downloaded export and check that your notes are present.</li>
+</ol>
+<p>Use the browser's <strong>Open link in new tab</strong> action to compare laboratories. Ordinary collection links use the same tab; leaving the RMS/mean laboratory can therefore discard its unexported work.</p>
+<h3 id="user-guide-know-what-is-saved">Know what is saved</h3>
+<p>The table describes the student work retained by each laboratory. Except for laboratory 03, saving uses local browser storage when the browser permits it. Watch the saving notice in the laboratory. If it reports that storage is unavailable, work remains only while that page is open.</p>
+<p class="table-help">On a narrow screen, scroll the table horizontally to read all columns.</p><div aria-label="Scrollable documentation table" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Laboratory</th>
+<th>Work retained when browser storage is available</th>
+<th>Export student work</th>
+<th>Export numerical data or plots</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="01%20-%20Power%20Semiconductor%20Devices.html">01 · Power semiconductor devices</a></td>
+<td>Investigation notes and the first-attempt self-assessment record.</td>
+<td><strong>Export my work</strong> → TXT; includes notes, the recorded self-assessment and selected model summaries.</td>
+<td>Print / PDF for plots and the teaching material.</td>
+</tr>
+<tr>
+<td><a href="02%20-%20Control%20and%20Protection%20in%20Power%20Electronics.html">02 · Control and protection in power electronics</a></td>
+<td>Investigation notes and the first-attempt quiz record.</td>
+<td><strong>Export my work</strong> → TXT; includes notes, the recorded quiz and current model parameters.</td>
+<td><strong>Export model CSV</strong> in each of the 14 model blocks.</td>
+</tr>
+<tr>
+<td><a href="03%20-%20RMS%20and%20Mean%20Value%20Calculation%20Review.html">03 · RMS and mean value calculation</a></td>
+<td><strong>Page only:</strong> notes, selected answers and attempt history are lost on reload or closure.</td>
+<td><strong>Export my work</strong> → TXT; includes current waveform settings, mean/RMS results, notes and answers.</td>
+<td><strong>Export notes and answers only</strong> → TXT is also available; use it if a calculation error prevents the full export.</td>
+</tr>
+<tr>
+<td><a href="04%20-%20Fourier%20Harmonic%20Decomposition.html">04 · Fourier harmonic decomposition</a></td>
+<td>Self-assessment selections, attempts, revealed-solution history and its reasoning notes.</td>
+<td>Open <strong>Check your understanding</strong>, then <strong>Export self-assessment</strong> → TXT.</td>
+<td><strong>Export data</strong> → CSV for the active Fourier model.</td>
+</tr>
+<tr>
+<td><a href="05%20-%20Three-Phase%20Electrical%20System%20Review.html">05 · Three-phase electrical system review</a></td>
+<td>Activity notes, quiz history and selected interface/model settings.</td>
+<td><strong>Export my work</strong> → TXT; includes activity notes, quiz history and current settings.</td>
+<td><strong>Export waveform CSV</strong> for voltage data.</td>
+</tr>
+<tr>
+<td><a href="06%20-%20Uncontrolled%20Rectifiers%20-%20Single-Phase%20Half-Wave.html">06 · Single-phase half-wave diode rectifier</a></td>
+<td>Self-assessment selections, attempts, revealed-solution history and its reasoning notes.</td>
+<td>Open <strong>Check your understanding</strong>, then <strong>Export self-assessment</strong> → TXT.</td>
+<td><strong>Waveforms CSV</strong> and <strong>Metrics CSV</strong> at the Advanced level.</td>
+</tr>
+<tr>
+<td><a href="07%20-%20Uncontrolled%20Rectifiers%20-%20Single-Phase%20Full-Wave.html">07 · Single-phase full-wave diode bridge</a></td>
+<td>Self-assessment selections, attempts, revealed-solution history and its reasoning notes.</td>
+<td>Open <strong>Check your understanding</strong>, then <strong>Export self-assessment</strong> → TXT.</td>
+<td><strong>Export data</strong> → CSV for the numerical model.</td>
+</tr>
+<tr>
+<td><a href="08%20-%20Uncontrolled%20Rectifiers%20-%20Three-Phase%20Half-Wave.html">08 · Three-phase half-wave diode rectifier</a></td>
+<td>Self-assessment selections, attempts, revealed-solution history and its reasoning notes.</td>
+<td>Open <strong>Check your understanding</strong>, then <strong>Export self-assessment</strong> → TXT.</td>
+<td><strong>Export data</strong> → CSV for the numerical model.</td>
+</tr>
+<tr>
+<td><a href="09%20-%20Uncontrolled%20Rectifiers%20-%20Three-Phase%20Full-Wave.html">09 · Three-phase full-wave diode bridge</a></td>
+<td>Self-assessment selections, attempts, revealed-solution history and its reasoning notes.</td>
+<td>Open <strong>Check your understanding</strong>, then <strong>Export self-assessment</strong> → TXT.</td>
+<td><strong>Export data</strong> → CSV for the numerical model.</td>
+</tr>
+<tr>
+<td><a href="10%20-%20Controlled%20Rectifiers%20-%20Single-Phase%20Half-Wave.html">10 · Single-phase half-wave SCR rectifier</a></td>
+<td>Self-assessment selections, attempts, revealed-solution history and its reasoning notes.</td>
+<td>Open <strong>Check your understanding</strong>, then <strong>Export self-assessment</strong> → TXT.</td>
+<td><strong>Export data</strong> → CSV for the numerical model.</td>
+</tr>
+<tr>
+<td><a href="11%20-%20Controlled%20Rectifiers%20-%20Single-Phase%20Full-Wave.html">11 · Single-phase fully controlled SCR bridge</a></td>
+<td>Self-assessment selections, attempts, revealed-solution history and its reasoning notes.</td>
+<td>Open <strong>Check your understanding</strong>, then <strong>Export self-assessment</strong> → TXT.</td>
+<td><strong>Export data</strong> → CSV for the numerical model.</td>
+</tr>
+<tr>
+<td><a href="12%20-%20Controlled%20Rectifiers%20-%20Three-Phase%20Half-Wave.html">12 · Three-phase half-wave SCR rectifier</a></td>
+<td>Self-assessment selections, attempts, revealed-solution history and its reasoning notes.</td>
+<td>Open <strong>Check your understanding</strong>, then <strong>Export self-assessment</strong> → TXT.</td>
+<td><strong>Export data</strong> → CSV for the numerical model.</td>
+</tr>
+<tr>
+<td><a href="13%20-%20Controlled%20Rectifiers%20-%20Three-Phase%20Full-Wave.html">13 · Three-phase fully controlled SCR bridge</a></td>
+<td>Self-assessment selections, attempts, revealed-solution history and its reasoning notes.</td>
+<td>Open <strong>Check your understanding</strong>, then <strong>Export self-assessment</strong> → TXT.</td>
+<td><strong>Export data</strong> → CSV for the numerical model.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Laboratory 03 is the important exception: its notes and answers are intentionally held only in the open page. <strong>Export before every reload, closure or navigation away.</strong> A browser exit warning is not guaranteed.</p>
+<p>For laboratory 05, the saved state also includes such settings as source amplitude, frequency, cursor and voltage probes. For the other laboratories, record the operating point with the numerical export or a PDF rather than relying on settings surviving a reload.</p>
+<p>Browser work depends on the browser profile and the storage context. Moving or renaming downloaded files, changing browser or computer, clearing site data, or using private browsing can make earlier work unavailable. Local-file storage behaviour also varies between browsers. <strong>Do not expect notes or answers to transfer between an offline file and the hosted website, or between different website addresses.</strong> Export them before changing context. The existing TXT and CSV exports provide readable records; this collection does not provide a general file-import or automatic synchronisation facility.</p>
+<h3 id="user-guide-choose-the-appropriate-export">Choose the appropriate export</h3>
+<p><strong>TXT records</strong> preserve student notes and the self-assessment information supplied by that laboratory. <strong>CSV files</strong> preserve numerical data and the settings or provenance included by the model. In Fourier and the rectifier laboratories, a numerical CSV does not contain the self-assessment notes: export both files when you need both kinds of work.</p>
+<p>For laboratory 06, choose the <strong>Advanced</strong> level to reach the waveform and metric CSV controls. In laboratory 02, each model has its own CSV control. Laboratory 01 and laboratory 03 provide their work in TXT rather than a separate numerical CSV.</p>
+<p>Exports include a laboratory identifier and the internal HTML release identifier, distinct from collection version 1.0. Keep the generated filename to help identify the export. A date in an exported filename is the export date, not the collection publication date.</p>
+<p>Import CSV files into a spreadsheet using comma-separated fields and a decimal point. Read the header and metadata rows for units and definitions. Some exports include extra rows at switching events, one-sided limits or distinct repeating intervals; do not assume that every time step is uniform. Undefined physical ratios can have blank entries as described by the laboratory; they should not be converted automatically to zero.</p>
+<p>If a calculation fails, follow the on-page error message and correct the settings or use its retry control. Numerical export and application printing can be disabled until a valid result is available. Student-work exports remain available where the interface provides them; laboratory 03 has the separate <strong>Export notes and answers only</strong> control.</p>
+<h3 id="user-guide-print-or-save-a-pdf">Print or save a PDF</h3>
+<p>Use the laboratory's <strong>Print / PDF</strong> control, then choose a printer or the browser's PDF destination. Check the preview for the chosen language, operating point, notes, questions and the available solution options. Print controls and options differ between laboratories; the self-assessment may offer <strong>Include solutions when printing</strong> and <strong>Include explanations of incorrect options</strong>.</p>
+<p>Keep a TXT export when the answer history matters. A printed worksheet is not a replacement for every item in the electronic self-assessment record. A PDF preserves a snapshot of the display; the HTML remains the interactive resource.</p>
+<p>This documentation page can also be printed using the browser's Print command. Browser and printer settings can change page breaks and colours.</p>
+<h3 id="user-guide-use-the-collection-offline">Use the collection offline</h3>
+<p>The laboratory HTMLs contain their scripts, styling, calculations and drawings. No installation, account, server or internet connection is needed for the teaching interactions after extracting the collection. JavaScript must be enabled. Optional links to external references require an internet connection.</p>
+<p>Keep <a href="index.html">index.html</a>, the numbered HTMLs and the accompanying documents together. Export your work to a folder you can find, and retain those exports separately before updating the collection. Keeping a filename stable helps navigation, but it does not guarantee continuity of browser-local work.</p>
+<h3 id="user-guide-recover-or-clear-work-carefully">Recover or clear work carefully</h3>
+<p>If a laboratory reports earlier saved work that could not be interpreted or no longer matches its current questions, export that work before erasing it. The recovery material may be included in the TXT export; it may need to be read manually rather than appearing as current answers.</p>
+<p>Read the confirmation before using <strong>Erase</strong>, <strong>Delete my notes and quiz record</strong>, or an equivalent control. Resetting a circuit or waveform and erasing student work are separate actions. Export first if you need to keep the record.</p>
+<p>Self-assessment results are for learning and practice. They are not an official course grade. The collection has no automatic submission to an instructor or learning management system; follow your instructor's submission instructions when a task requires delivery.</p>
+<h3 id="user-guide-find-related-information">Find related information</h3>
+<p>Read the <a href="COLLECTION_DESCRIPTION.md">collection description</a> for learning objectives and model limits, <a href="LICENSING.txt">LICENSING.txt</a> for reuse terms, and <a href="CITATION.md">CITATION.md</a> for citation instructions. The <a href="DOCUMENTATION.html">browser-readable documentation</a> includes these explanatory sections. Documentation is written in English; the laboratory interfaces provide the three languages listed above.</p>
+</section>
+<section aria-labelledby="collection-description-heading" class="doc-section" id="collection-description"><h2 id="collection-description-heading">Collection description</h2><p>This collection supports university-level Power Electronics teaching through interactive explanations, calculations, plots, guided investigations and self-assessment. It is intended for students, instructors preparing demonstrations or guided activities, and independent learners with basic circuit knowledge.</p>
+<h3 id="collection-description-scope-of-version-1-0">Scope of version 1.0</h3>
+<p>The collection contains <strong>13 laboratories and one laboratory homepage</strong>. Its topics are power semiconductor devices, control and protection, mean/RMS values, Fourier harmonics, balanced three-phase voltages, four diode rectifiers and four SCR rectifiers. The accompanying documentation page is a guide, not an additional laboratory.</p>
+<p>The 194 authored self-assessment questions are distributed across these 13 laboratories. The question count exposed at a particular learning level can be smaller. Additional conceptual checks and investigations are provided where the laboratory offers them.</p>
+<p>Dedicated laboratories on inverters and DC/DC converters are planned for future versions; they are not modules in this release. Some existing controlled-rectifier laboratories already discuss or calculate inverting operation under suitable circuit conditions.</p>
+<h3 id="collection-description-prerequisites">Prerequisites</h3>
+<p>Learners should know Kirchhoff's laws, basic resistor/inductor/capacitor behaviour, elementary algebra and trigonometry, and sinusoidal AC signals. Mean/RMS and Fourier work benefits from basic integration and harmonic representation. The more advanced inductive and capacitive rectifier sections use circuit differential equations, switching intervals and steady periodic operation. The three review laboratories help revisit the corresponding foundations.</p>
+<h3 id="collection-description-common-learning-objectives">Common learning objectives</h3>
+<p>After appropriate study, learners should be able to identify voltage and current reference directions; distinguish peak, RMS, mean and instantaneous quantities; predict conduction paths before using a plot; relate parameters to waveforms, device currents, power and harmonics; and explain when an analytical formula applies.</p>
+<p>The laboratories encourage a cycle of prediction, parameter change, observation and explanation. Students can use local notes and self-assessment to record that reasoning, then export a portable record. These activities support learning; local quiz results are not formal course grades.</p>
+<h3 id="collection-description-module-inventory">Module inventory</h3>
+<p class="table-help">On a narrow screen, scroll the table horizontally to read all columns.</p><div aria-label="Scrollable documentation table" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>No.</th>
+<th>File and module</th>
+<th>Learning objectives</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td><a href="01%20-%20Power%20Semiconductor%20Devices.html">Power semiconductor devices</a><br/>01 - Power Semiconductor Devices.html</td>
+<td>Distinguish diode, SCR, BJT, MOSFET and IGBT behaviour; interpret conduction and switching losses, drive requirements and thermal constraints.</td>
+</tr>
+<tr>
+<td>02</td>
+<td><a href="02%20-%20Control%20and%20Protection%20in%20Power%20Electronics.html">Control and protection in power electronics</a><br/>02 - Control and Protection in Power Electronics.html</td>
+<td>Explain gate drive, reference potentials, isolation, triggering, cooling, snubbers, clamps, fuses and crowbar coordination using their separate teaching models.</td>
+</tr>
+<tr>
+<td>03</td>
+<td><a href="03%20-%20RMS%20and%20Mean%20Value%20Calculation%20Review.html">RMS and mean value calculation</a><br/>03 - RMS and Mean Value Calculation Review.html</td>
+<td>Calculate and distinguish mean, mean square and RMS; relate RMS to resistive heating and separate DC and zero-mean AC contributions.</td>
+</tr>
+<tr>
+<td>04</td>
+<td><a href="04%20-%20Fourier%20Harmonic%20Decomposition.html">Fourier harmonic decomposition</a><br/>04 - Fourier Harmonic Decomposition.html</td>
+<td>Construct and decompose periodic currents; interpret coefficients, phase, RMS, DC, THD, truncation and the distinction between source and output currents.</td>
+</tr>
+<tr>
+<td>05</td>
+<td><a href="05%20-%20Three-Phase%20Electrical%20System%20Review.html">Three-phase electrical system review</a><br/>05 - Three-Phase Electrical System Review.html</td>
+<td>Relate balanced phase and line voltages, subtraction polarity, phase sequence, RMS/peak values and three-pulse/six-pulse voltage envelopes.</td>
+</tr>
+<tr>
+<td>06</td>
+<td><a href="06%20-%20Uncontrolled%20Rectifiers%20-%20Single-Phase%20Half-Wave.html">Single-phase half-wave diode rectifier</a><br/>06 - Uncontrolled Rectifiers - Single-Phase Half-Wave.html</td>
+<td>Explain single-device conduction, inductive current continuity, freewheeling, an opposing DC source, capacitor filtering and source-current distortion.</td>
+</tr>
+<tr>
+<td>07</td>
+<td><a href="07%20-%20Uncontrolled%20Rectifiers%20-%20Single-Phase%20Full-Wave.html">Single-phase full-wave diode bridge</a><br/>07 - Uncontrolled Rectifiers - Single-Phase Full-Wave.html</td>
+<td>Follow the conducting diode pair, output polarity, load-current continuity, capacitor charging and the difference between source and output current.</td>
+</tr>
+<tr>
+<td>08</td>
+<td><a href="08%20-%20Uncontrolled%20Rectifiers%20-%20Three-Phase%20Half-Wave.html">Three-phase half-wave diode rectifier</a><br/>08 - Uncontrolled Rectifiers - Three-Phase Half-Wave.html</td>
+<td>Follow phase ownership and the neutral return; explain three-pulse output, load branches, phase currents and harmonics.</td>
+</tr>
+<tr>
+<td>09</td>
+<td><a href="09%20-%20Uncontrolled%20Rectifiers%20-%20Three-Phase%20Full-Wave.html">Three-phase full-wave diode bridge</a><br/>09 - Uncontrolled Rectifiers - Three-Phase Full-Wave.html</td>
+<td>Follow the conducting diode pair and six-pulse output; distinguish phase, line, device, resistor and complete output quantities.</td>
+</tr>
+<tr>
+<td>10</td>
+<td><a href="10%20-%20Controlled%20Rectifiers%20-%20Single-Phase%20Half-Wave.html">Single-phase half-wave SCR rectifier</a><br/>10 - Controlled Rectifiers - Single-Phase Half-Wave.html</td>
+<td>Relate firing delay and gate-window duration to conduction, freewheeling, load current and power.</td>
+</tr>
+<tr>
+<td>11</td>
+<td><a href="11%20-%20Controlled%20Rectifiers%20-%20Single-Phase%20Full-Wave.html">Single-phase fully controlled SCR bridge</a><br/>11 - Controlled Rectifiers - Single-Phase Full-Wave.html</td>
+<td>Explain paired SCR triggering, discontinuous/continuous current and rectifying or inverting operation under the stated load conditions.</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a href="12%20-%20Controlled%20Rectifiers%20-%20Three-Phase%20Half-Wave.html">Three-phase half-wave SCR rectifier</a><br/>12 - Controlled Rectifiers - Three-Phase Half-Wave.html</td>
+<td>Relate firing delay from natural commutation to three-pulse operation, phase ownership, load behaviour and signed power.</td>
+</tr>
+<tr>
+<td>13</td>
+<td><a href="13%20-%20Controlled%20Rectifiers%20-%20Three-Phase%20Full-Wave.html">Three-phase fully controlled SCR bridge</a><br/>13 - Controlled Rectifiers - Three-Phase Full-Wave.html</td>
+<td>Explain six-pulse pair commutation, gate timing, load behaviour, harmonics and rectifying or inverting operation under the stated conditions.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="collection-description-model-assumptions-and-limitations">Model assumptions and limitations</h3>
+<p>The on-page definitions and assumptions govern each model. Use the offered parameter ranges and the actual active load configuration. The following overview identifies the main limits needed when interpreting or comparing results.</p>
+<p class="table-help">On a narrow screen, scroll the table horizontally to read all columns.</p><div aria-label="Scrollable documentation table" class="table-scroll" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Modules</th>
+<th>Important modelling limits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>Device characteristics, loss waveforms, reverse recovery, gate charge, SCR/GTO actions and IGBT tail current are simplified or illustrative models. The steady thermal network has no thermal dynamics or temperature feedback into electrical loss. A favourable result does not establish device ratings or safe operating area.</td>
+</tr>
+<tr>
+<td>02</td>
+<td>The separate drive, isolation, triggering and protection models each have their own scope. RC gate models omit the Miller effect and do not predict drain/collector switching times; imposed flux and fault envelopes do not establish transformer saturation or real fuse operation. Thermal networks are steady-state; snubber, clamp, coordination and crowbar examples do not constitute hardware/component selection.</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Prescribed ideal periodic current waveforms, not a load-circuit simulation. Mean/RMS calculations use analytical expressions; plot sampling is for drawing. Heating examples use a constant 2 Ω resistor. Meter bandwidth, transients, switching loss and temperature dependence are outside the model.</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Metrics describe the active <strong>finite</strong> Fourier reconstruction. Changing the maximum order, order filter or enabled components changes the analyzed waveform. The optional ideal reference and its complete-waveform metrics are separate. The ideal rectifier source-current presets assume sinusoidal sources, ideal diodes and a pure resistive load.</td>
+</tr>
+<tr>
+<td>05</td>
+<td>Ideal balanced sinusoidal voltages with a fixed U–V–W sequence, equal phase peaks and an ideal neutral reference. It constructs voltage differences and envelopes; it does not calculate load/neutral currents, power or semiconductor states. The √3 and 30° relations require the stated balance, waveform and voltage ordering.</td>
+</tr>
+<tr>
+<td>06–13</td>
+<td>Periodic steady-state rectifier models with prescribed sinusoidal sources; the three-phase sources are balanced. Device drops use the constant-drop option where offered. Startup, source/transformer impedance, finite commutation overlap, reverse recovery, leakage, switching loss and temperature are excluded. Ideal charging-current peaks are not safe component ratings.</td>
+</tr>
+<tr>
+<td>10–13</td>
+<td>SCR rectifier models assume adequate logical gate drive, zero latching/holding thresholds and zero recovery time. They explain circuit conduction rather than validate a real SCR driver. The firing-angle cosine rule needs continuous series current and its other stated conditions. A firing angle above 90° alone does not establish inversion.</td>
+</tr>
+</tbody>
+</table></div>
+<p>For capacitor-filter comparisons, match the circuit branch explicitly. The diode filters in 06–08 use the ideal capacitor branch. Laboratory 09 offers both an ideal branch and a branch with a small charging resistance; the controlled rectifiers use the specified resistance in the capacitor branch. That resistor is <strong>not</strong> an AC-source resistance. Match this choice, active load, voltage convention, device drops and periodic state before comparing diode and SCR circuits.</p>
+<p>For three-phase rectifiers, the input amplitude is phase-to-neutral peak; for a single-phase bridge it is the complete source peak. The half-wave three-phase topology has a neutral return, while the full-wave bridge uses three line conductors. Laboratories 09 and 13 show all six directed line voltages by default in <strong>Source and output voltages</strong>; phase voltages have a separate toggle and are initially hidden. Display toggles do not change the physical calculation.</p>
+<p>Distinguish the resistor current from the complete rectifier output current when a capacitor branch is active. Check the stated denominator for distortion, power factor and efficiency. An undefined ratio is not a zero result. If a laboratory offers established and zero-current-start periodic states, use its stated conditions; selecting a state does not simulate the complete startup transient.</p>
+<p>These models support circuit reasoning within their disclosed assumptions. Real hardware also requires appropriate datasheets, parasitic and thermal behaviour, ratings, layout, insulation and experimental validation.</p>
+<h3 id="collection-description-languages-and-delivery">Languages and delivery</h3>
+<p>The laboratory interfaces are available in English, Spanish and Galician. The official collection title remains in English. The documentation is written in English. Each laboratory is a self-contained HTML and runs offline with JavaScript enabled; optional external references are supplementary.</p>
+<p>Start from <a href="index.html">index.html</a> and use the <a href="USER_GUIDE.md">user guide</a>. Notes and assessment records are saved locally when permitted in 12 laboratories; laboratory 03 keeps them only in the open page. See the guide's per-module export table. Offline and hosted storage must not be assumed to transfer or synchronise.</p>
+<h3 id="collection-description-prepublication-verification">Prepublication verification</h3>
+<p>The recorded educational review on 6 October 2026 checked independent analytical reference cases, all 194 English self-assessment questions, and numerical/sign equivalence and actual grading across EN/ES/GL. Browser checks covered Chrome 154.0.8037.98 and Microsoft Edge 154.0.4258.53, narrow layouts, printing/PDF, actual exports, local HTTP and extracted offline use.</p>
+<p>The later six-line/phase-visibility revisions to laboratories 09 and 13 were checked separately in Chrome 154.0.8037.98, including exports, printing and narrow/expanded views. Those specific later plot revisions have not been retested in Edge. The documentation preparation in Chrome 155.0.8059.39 checked notes and submitted-answer retention in all 13 laboratories, 14 actual TXT exports and 25 actual CSV exports against the current HTMLs. It also checked the documentation and homepage through local HTTP and extracted offline use, in light/dark layouts at widths from 320 to 1440 pixels, and their native browser PDF output.</p>
+<p>This scope does not establish compatibility with every browser or device, a complete screen-reader audit, or formal accessibility certification. Firefox, Safari and physical mobile devices were not exercised in those reviews. Results remain subject to the model assumptions above.</p>
+<h3 id="collection-description-authorship-and-reuse">Authorship and reuse</h3>
+<p>Alejandro Gómez Yepes is the named author, affiliated with Universidade de Vigo. He used ChatGPT (OpenAI) and Claude (Anthropic) as AI tools to help generate and refine the HTML resources. The acknowledgement does not imply personal assistance, collaboration or endorsement by those companies.</p>
+<p>Original educational content, diagrams, explanatory documentation and collection metadata use CC BY 4.0; original implementation code uses MIT. The scopes are component-specific and apply within the author's rights. Student-authored work and third-party material have their own rights. See <a href="LICENSING.txt">LICENSING.txt</a>, <a href="LICENSE-CONTENT.txt">LICENSE-CONTENT.txt</a>, <a href="LICENSE-CODE.txt">LICENSE-CODE.txt</a> and <a href="THIRD_PARTY_NOTICES.txt">THIRD_PARTY_NOTICES.txt</a>.</p>
+<p>Use <a href="CITATION.md">CITATION.md</a> to cite the collection and <a href="CHANGELOG.md">CHANGELOG.md</a> to identify the prepared release. <a href="MANIFEST.json">MANIFEST.json</a> and <a href="SHA256SUMS.txt">SHA256SUMS.txt</a> identify this package's exact file bytes. Publication date, DOI and public URLs remain pending.</p>
+</section>
+<section aria-labelledby="licences-heading" class="doc-section" id="licences"><h2 id="licences-heading">Licences</h2><p>Original educational content, diagrams, educational strings/questions embedded in scripts, explanatory documentation and collection metadata use <strong>CC BY 4.0</strong>. Original implementation code, CSS and structural HTML use <strong>MIT</strong>. These are grants for different components, within the author's rights. Student-authored work and third-party material have their own rights.</p>
+<p>Both licences permit commercial reuse subject to their terms. Preserve appropriate attribution, licence links and change notices for content; preserve the MIT copyright and permission notice for code. The full legal terms govern reuse.</p>
+<ul>
+<li><a href="LICENSING.txt">LICENSING.txt</a>: precise scopes and attribution guidance</li>
+<li><a href="LICENSE-CONTENT.txt">LICENSE-CONTENT.txt</a>: complete CC BY 4.0 terms</li>
+<li><a href="LICENSE-CODE.txt">LICENSE-CODE.txt</a>: complete MIT terms</li>
+<li><a href="THIRD_PARTY_NOTICES.txt">THIRD_PARTY_NOTICES.txt</a>: external references and third-party terms</li>
+</ul>
+<p>The code drawing a diagram is MIT; its original educational visual content is CC BY 4.0. Linked technical documents are not relicensed by this collection. See <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons CC BY 4.0</a> and the <a href="https://opensource.org/license/mit">MIT licence</a>.</p>
+</section>
+<section aria-labelledby="citation-heading" class="doc-section" id="citation"><h2 id="citation-heading">Citation instructions</h2><p>Cite the version you actually use. The canonical author is <strong>Alejandro Gómez Yepes</strong>, with given name <strong>Alejandro</strong> and family name <strong>Gómez Yepes</strong>. The canonical title is <strong>Interactive HTML Learning Resources for Power Electronics</strong> and the collection version is <strong>1.0</strong>. Universidade de Vigo is the author's affiliation.</p>
+<h3 id="citation-current-publication-status">Current publication status</h3>
+<p>Version 1.0 was first released publicly on <strong>7 October 2026</strong>. The <a href="https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0">GitHub release</a> preserves the reviewed downloadable collection; the <a href="https://agyepes.github.io/power-electronics-interactive-html/">website</a> provides online use. Zenodo publication, version DOI and concept DOI remain pending. Internal HTML release timestamps and export timestamps identify editing and export events, not the collection's publication date.</p>
+<h3 id="citation-citation-for-the-current-release">Citation for the current release</h3>
+<blockquote>
+<p>Gómez Yepes, A. (2026). <em>Interactive HTML Learning Resources for Power Electronics</em> (Version 1.0) [Interactive educational resources]. Released October 7, 2026. https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0</p>
+</blockquote>
+<p>Use the GitHub release URL to identify the fixed version. The website URL is useful for access, but may serve a later collection version in the future.</p>
+<pre><code class="language-bibtex">@misc{gomez_yepes_power_electronics_html_v1_0,
+  author       = {G{\'o}mez Yepes, Alejandro},
+  title        = {Interactive {HTML} Learning Resources for Power Electronics},
+  year         = {2026},
+  month        = {oct},
+  version      = {1.0},
+  howpublished = {GitHub release},
+  url          = {https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0},
+  note         = {Interactive educational resources; released October 7, 2026}
+}
+</code></pre>
+<h3 id="citation-citation-after-the-future-zenodo-deposit">Citation after the future Zenodo deposit</h3>
+<p>Once the identical version 1.0 package has a published Zenodo record, use its verified version DOI for the canonical archived citation. Preserve the first-publication date above. No DOI has been assigned in this package; do not invent an identifier or describe the pending deposit as published.</p>
+<p>For a particular laboratory, cite the collection and identify its module number and title in the surrounding text, caption or note, for example <strong>09 — Uncontrolled Rectifiers — Three-Phase Full-Wave</strong>. Keep the collection version and the GitHub release URL; use the actual version DOI once the Zenodo archive is published. An exported calculation can additionally identify its operating point and internal HTML release identifier.</p>
+<h3 id="citation-version-doi-and-concept-doi">Version DOI and concept DOI</h3>
+<p>A Zenodo <strong>version DOI</strong> identifies one archived release. Use that identifier when reporting a teaching intervention, calculation, comparison or other work that depends on the exact files.</p>
+<p>The <strong>concept DOI</strong> represents the collection across its versions. It is suitable when referring to the evolving collection as a whole. It does not identify the particular file snapshot used in a reproducible result. The collection label 1.0 is chosen for these resources and should be recorded separately from Zenodo's record/version numbering. See <a href="https://support.zenodo.org/help/en-gb/1-upload-deposit/97-what-is-doi-versioning">Zenodo's DOI versioning explanation</a> and <a href="https://support.zenodo.org/help/en-gb/25-citations/234-how-to-share-or-cite-a-zenodo-record">citation guidance</a>.</p>
+<h3 id="citation-future-publication-metadata">Future publication metadata</h3>
+<p>The first public release date is 7 October 2026. Retain that date when depositing this release on Zenodo; its upload/deposit date is a different event. Add a DOI only after verifying the assigned identifier and its publication status. See the official <a href="https://help.zenodo.org/docs/deposit/describe-records/publication-date/">publication-date guidance</a> and <a href="https://help.zenodo.org/docs/deposit/describe-records/reserve-doi/">DOI reservation guidance</a>.</p>
+<p>The version 1.0 archive and its checksums must remain unchanged. A subsequently assigned DOI can be linked from the repository citation metadata, release notes and Zenodo record without replacing the archived ZIP. If any package file is revised, publish a new collection release with regenerated integrity files and retain this release.</p>
+<p>For substantive later additions or corrections, archive a new version and preserve the earlier release and its version-specific citation. Planned inverter and DC/DC laboratories belong to future versions. See <a href="https://help.zenodo.org/docs/deposit/manage-versions/">Zenodo's version-management guidance</a>.</p>
+<h3 id="citation-attribution-when-reusing-content-or-code">Attribution when reusing content or code</h3>
+<p>A scholarly citation and the reuse obligations have related but different purposes. For original educational content or diagrams, credit the author and source, link CC BY 4.0, and identify changes when adapting the material. An example for an unchanged laboratory is:</p>
+<blockquote>
+<p>Alejandro Gómez Yepes, Universidade de Vigo. <em>Interactive HTML Learning Resources for Power Electronics</em>, version 1.0, laboratory [module number and title]. Educational content and diagrams: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Source: [verified version DOI or source URL].</p>
+</blockquote>
+<p>This attribution is a template; fill its bracketed fields. For an adaptation, add a brief description of the changes. Keep the MIT copyright and permission notice when redistributing code or substantial portions of it. The full terms and component scopes in <a href="LICENSING.txt">LICENSING.txt</a>, <a href="LICENSE-CONTENT.txt">LICENSE-CONTENT.txt</a> and <a href="LICENSE-CODE.txt">LICENSE-CODE.txt</a> govern reuse.</p>
+</section>
+<section aria-labelledby="change-log-heading" class="doc-section" id="change-log"><h2 id="change-log-heading">Change log</h2><h3 id="change-log-version-1-0-7-october-2026">Version 1.0 — 7 October 2026</h3>
+<p><strong>First public release.</strong> The collection is available through <a href="https://agyepes.github.io/power-electronics-interactive-html/">GitHub Pages</a> and the <a href="https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0">version 1.0 GitHub release</a>. The Zenodo deposit and DOI remain pending. The entries below describe preparation of this first release, not earlier published versions.</p>
+<p>The released collection contains the homepage and 13 numbered laboratories listed in <a href="COLLECTION_DESCRIPTION.md">COLLECTION_DESCRIPTION.md</a>. Their public filenames use English names and an ordered 01–13 prefix; <code>index.html</code> remains the homepage.</p>
+<p>The preparation established the common collection title, author, Universidade de Vigo affiliation and version 1.0 label, repaired collection navigation, and added CC BY 4.0/MIT notices with distinct educational-content and implementation-code scopes. The AI-tool acknowledgement was retained.</p>
+<p>The educational/functionality review on 6 October 2026 corrected saved-work recovery, calculation-failure handling and print flow, and repaired expanded-plot legend layout in the controlled rectifiers. The recorded checks covered numerical reference cases, assessment content and grading, languages, exports, notes, local HTTP, offline extraction and printing within the scope described in the collection description.</p>
+<p>The subsequent source-voltage updates to laboratories 09 and 13 added all six directed line voltages and separate phase-voltage visibility. The default view displays line voltages and hides phase voltages. The numerical models were preserved.</p>
+<p>The documentation preparation on <strong>7 October 2026 (Europe/Madrid)</strong> added the user guide, collection description, citation instructions, this change log, a browser-readable documentation page, and an exact file manifest and SHA-256 list. The homepage links the documentation in EN/ES/GL. These preparation entries identify work completed before release; the first public release date is 7 October 2026.</p>
+<p>The publication preparation added the stable website and download addresses, current release citation and publication date. GitHub deployment configuration and repository citation metadata are kept outside the downloadable collection. The original 13 laboratory files and their numerical, storage and export behavior are unchanged from the reviewed preparation.</p>
+<h3 id="change-log-planned-future-work">Planned future work</h3>
+<p>Dedicated laboratories on inverters and DC/DC converters are planned for a future collection version, tentatively version 2. Additional modules and their eventual release date will be recorded when they exist and are reviewed; they are not files in version 1.0.</p>
+<h3 id="change-log-identify-an-exact-package">Identify an exact package</h3>
+<p>The public collection label is <strong>1.0</strong>. Individual HTMLs also retain internal release identifiers and parent provenance, which identify their source revisions. <a href="MANIFEST.json">MANIFEST.json</a> records the current file sizes, SHA-256 values and HTML provenance; <a href="SHA256SUMS.txt">SHA256SUMS.txt</a> includes the manifest's own hash.</p>
+<p>The two integrity files cannot both include their own hashes without a circular dependency. <code>MANIFEST.json</code> therefore inventories every package file <strong>except <code>MANIFEST.json</code> and <code>SHA256SUMS.txt</code></strong>. <code>SHA256SUMS.txt</code> hashes every package file <strong>except itself</strong>, including <code>MANIFEST.json</code>. The manifest also records the complete expected filename set.</p>
+<p>Regenerate both integrity files after any content or metadata edit. A checksum establishes equality with the bytes listed in this package; it does not independently authenticate the author or a download source. Keep the final released archive and its externally recorded archive checksum with the publication record.</p>
+</section>
+<section aria-labelledby="package-files-heading" class="doc-section" id="package-files"><h2 id="package-files-heading">Package files and integrity</h2>
+<p><a href="README.md">README.md</a> gives the document inventory and checksum instructions.
+<a href="MANIFEST.json">MANIFEST.json</a> records the expected filenames, sizes, hashes and HTML provenance.
+<a href="SHA256SUMS.txt">SHA256SUMS.txt</a> hashes every package file except itself, including the manifest.
+The manifest inventories the payload and excludes both integrity files to avoid self-reference.</p>
+<p><a href="ZENODO_METADATA.txt">ZENODO_METADATA.txt</a> is a local preparation for a future record; it is not an uploaded or published deposit.</p>
+</section></main><footer><p>Alejandro Gómez Yepes · Universidade de Vigo · Collection version 1.0</p>
+<p>Original educational content and explanatory documentation: <a href="LICENSE-CONTENT.txt" rel="license">CC BY 4.0</a>. Original implementation code: <a href="LICENSE-CODE.txt" rel="license">MIT</a>. <a href="LICENSING.txt">Component scopes</a>.</p>
+<p>The author used ChatGPT (OpenAI) and Claude (Anthropic) as AI tools to help generate and refine the resources.</p></footer></div></body></html>

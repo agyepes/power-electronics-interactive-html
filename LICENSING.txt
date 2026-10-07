@@ -1,0 +1,88 @@
+Interactive HTML Learning Resources for Power Electronics
+Licensing and reuse - collection version 1.0
+
+Author: Alejandro Gómez Yepes
+Affiliation: Universidade de Vigo
+
+The collection uses two licences for different components of its mixed HTML
+files. They are not alternative licences for each complete file. The grants
+cover only rights the author is entitled to license; third-party material
+retains its own terms.
+
+EDUCATIONAL CONTENT AND DIAGRAMS - CC BY 4.0
+
+Original educational text, explanations, activities, questions, answers,
+feedback, labels, tables, diagrams and other original visual content are
+licensed under the Creative Commons Attribution 4.0 International licence
+(SPDX identifier: CC-BY-4.0). The original explanatory documentation and
+collection metadata use the same licence.
+
+This scope includes educational material embedded in JavaScript strings or
+question-bank data. Its location inside a script does not make it MIT code.
+
+Student-authored notes and answers are outside these grants and remain the
+students' own work.
+
+You may share and adapt this material, including for commercial purposes,
+subject to the licence. Give appropriate credit, provide a link to the licence,
+indicate changes, and retain supplied copyright, attribution, licence and
+disclaimer notices as required by the legal terms. Do not imply endorsement
+by the author or Universidade de Vigo. Do not impose additional restrictions
+or technological measures that restrict recipients' licensed rights.
+
+The licence deed is at:
+https://creativecommons.org/licenses/by/4.0/
+
+The full legal terms are in LICENSE-CONTENT.txt and at:
+https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+Suggested attribution for an unchanged resource:
+Alejandro Gómez Yepes, Universidade de Vigo. Interactive HTML Learning
+Resources for Power Electronics, collection version 1.0. Educational content
+and diagrams: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+Add the laboratory title and the published source URL or DOI when available.
+For an adaptation, also identify what you changed. This is an example, not
+an additional licence condition or a mandatory citation format.
+
+IMPLEMENTATION CODE - MIT
+
+Original JavaScript application logic, CSS and structural HTML that implement
+the interfaces, calculations, plotting, storage and export features are
+licensed under the MIT License (SPDX identifier: MIT).
+
+The code that draws an original diagram is MIT; the educational visual content
+of the diagram is CC BY 4.0. Educational strings and question-bank material
+remain within the content scope above.
+
+MIT permits use, modification, redistribution and commercial use of the
+implementation, subject to its terms. Keep the copyright notice and the
+permission notice in all copies or substantial portions of that software.
+The complete licence, including its warranty disclaimer, is in LICENSE-CODE.txt
+and is embedded in a source comment in every HTML file.
+
+MIT reference:
+https://opensource.org/license/mit
+
+THIRD-PARTY MATERIAL AND CREDITS
+
+Linked manufacturer documents, university teaching references, software
+documentation and other external sources are not relicensed by this
+collection. Names and trademarks of third parties are not licensed by these
+grants. THIRD_PARTY_NOTICES.txt records the references identified in the
+distributed source files; their existing in-page citations are retained.
+
+Development assistance from ChatGPT (OpenAI) and Claude (Anthropic) remains
+acknowledged in the HTML files. This acknowledgement is a credit, not a grant
+of rights in OpenAI or Anthropic names, marks or external material.
+
+RIGHTS AND LEGAL TEXTS
+
+The licence summaries and attribution example above do not replace or add
+conditions to the full legal terms. Neither licence provides a warranty.
+The grants cover the author's rights in the identified components; they do
+not grant third-party rights or certify ownership of external material.
+
+LICENSE-CONTENT.txt reproduces the official, unmodified CC BY 4.0 plain-text
+legal code. LICENSE-CODE.txt reproduces the MIT licence with the author's
+copyright notice. The copyright year in the MIT notice is not a publication
+date. The first public release date and DOI remain to be added when verified.
