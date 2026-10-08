@@ -1,13 +1,15 @@
 cff-version: 1.2.0
-message: "Please cite the specific educational collection release you use. Zenodo DOI pending."
+message: "Please cite version 1.0 of this educational collection using its Zenodo version DOI."
 title: "Interactive HTML Learning Resources for Power Electronics"
 authors:
   - family-names: "Gómez Yepes"
     given-names: "Alejandro"
     affiliation: "Universidade de Vigo"
+    orcid: "https://orcid.org/0000-0002-1423-4276"
 version: "1.0"
 date-released: "2026-10-07"
-url: "https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0"
+doi: "10.5281/zenodo.23244291"
+url: "https://doi.org/10.5281/zenodo.23244291"
 repository-code: "https://github.com/agyepes/power-electronics-interactive-html"
 abstract: "Thirteen interactive HTML educational laboratories for Power Electronics. Educational content and diagrams use CC BY 4.0; implementation code uses MIT, with component-specific scopes in collection/LICENSING.txt."
 keywords:
@@ -22,9 +24,11 @@ preferred-citation:
     - family-names: "Gómez Yepes"
       given-names: "Alejandro"
       affiliation: "Universidade de Vigo"
+      orcid: "https://orcid.org/0000-0002-1423-4276"
   version: "1.0"
   year: 2026
   month: 10
   date-published: "2026-10-07"
-  url: "https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0"
-  notes: "Interactive educational resources. First public release October 7, 2026. Zenodo deposit and DOI pending."
+  doi: "10.5281/zenodo.23244291"
+  url: "https://doi.org/10.5281/zenodo.23244291"
+  notes: "Interactive educational resources. First public release October 7, 2026; archived on Zenodo October 8, 2026. This version DOI identifies the exact version 1.0 package."
