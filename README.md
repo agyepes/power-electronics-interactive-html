@@ -1,15 +1,15 @@
 # Interactive HTML Learning Resources for Power Electronics
 
 **Alejandro Gómez Yepes · Universidade de Vigo**  
-Collection version **1.0** · First public release **7 October 2026**
+Collection version **1.0.1** · Release **10 October 2026** · First collection release **7 October 2026**
 
 Thirteen interactive laboratories for university-level Power Electronics learning, with interfaces in English, Spanish and Galician. The collection covers power semiconductor devices, control and protection, mean/RMS values, Fourier harmonics, three-phase electrical systems and eight diode/SCR rectifier laboratories.
 
 - **[Use the laboratories online](https://agyepes.github.io/power-electronics-interactive-html/)**
-- **[Download the complete version 1.0 ZIP](https://github.com/agyepes/power-electronics-interactive-html/releases/download/v1.0/Interactive_HTML_Learning_Resources_for_Power_Electronics_v1.0.zip)**
+- **[Download the complete version 1.0.1 ZIP](https://github.com/agyepes/power-electronics-interactive-html/releases/download/v1.0.1/Interactive_HTML_Learning_Resources_for_Power_Electronics_v1.0.1.zip)**
 - **[Read the user guide](https://agyepes.github.io/power-electronics-interactive-html/DOCUMENTATION.html)**
-- **[View the version 1.0 release](https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0)**
-- **[View the version 1.0 Zenodo archive](https://doi.org/10.5281/zenodo.23244291)**
+- **[View the version 1.0.1 release](https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0.1)**
+- **[View the version 1.0.1 Zenodo archive](https://doi.org/10.5281/zenodo.23284179)**
 
 For offline use, extract the complete ZIP and open `index.html`. Retain the delivered filenames and accompanying files. The HTML laboratories contain their own scripts and styling.
 
@@ -19,13 +19,15 @@ Export notes and answers before leaving or changing files. Laboratory 03 (RMS an
 
 ## Citation and Zenodo archive
 
-> Gómez Yepes, A. (2026). *Interactive HTML Learning Resources for Power Electronics* (Version 1.0) [Interactive educational resources]. Zenodo. https://doi.org/10.5281/zenodo.23244291
+> Gómez Yepes, A. (2026). *Interactive HTML Learning Resources for Power Electronics* (Version 1.0.1) [Interactive educational resources]. Zenodo. https://doi.org/10.5281/zenodo.23284179
 
-Version 1.0 was first released on GitHub on **7 October 2026** and archived on Zenodo on **8 October 2026**. Both locations provide the identical reviewed ZIP and its original checksum companion. The ZIP's SHA-256 is `1b5dca09820dec1eda8ecd50f9c3410dfd5456be116d19cce2778c0132d94418`.
+Version 1.0.1, released on **10 October 2026**, corrects publication documentation and collection labels. Its DOI was reserved before freezing the package. The thirteen laboratories and their application logic, questions, saved-work keys and export schemas are retained.
 
-Use the **[version 1.0 DOI](https://doi.org/10.5281/zenodo.23244291)** when citing these exact materials. The **[collection concept DOI](https://doi.org/10.5281/zenodo.23244290)** represents all versions and resolves to the latest published version.
+GitHub and Zenodo provide the identical version 1.0.1 ZIP and checksum companion. ZIP SHA-256: `422495c2249f615ce28fc5dc335750273271d36281fa85884599c3f33f41b4c8`.
 
-[CITATION.cff](CITATION.cff) provides GitHub citation metadata for version 1.0. The [citation instructions](collection/CITATION.md) and other metadata inside the frozen package were written before the Zenodo archive existed and therefore still record the DOI as pending. Use the verified DOI above; the original package files and checksums are preserved.
+Use the **[version 1.0.1 DOI](https://doi.org/10.5281/zenodo.23284179)** for these exact materials. The **[collection concept DOI](https://doi.org/10.5281/zenodo.23244290)** represents all versions and resolves to the latest published version. [CITATION.cff](CITATION.cff) and the [citation instructions](collection/CITATION.md) identify the current release.
+
+The original version 1.0 was first released on GitHub on **7 October 2026** and archived on Zenodo on **8 October 2026**. Its [GitHub release](https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0), [Zenodo version DOI](https://doi.org/10.5281/zenodo.23244291), original ZIP and companion checksum remain unchanged. Original ZIP SHA-256: `1b5dca09820dec1eda8ecd50f9c3410dfd5456be116d19cce2778c0132d94418`. Cite that DOI if you used the original files.
 
 ## Licences and authorship
 
@@ -43,7 +45,7 @@ The publishing script verifies the complete filename set, checksums and committe
 
 The version 1.0 release tag and downloadable package are retained unchanged; citation links in release notes may be updated. Later corrections or additions receive new releases in this same repository. Keep public HTML basenames stable. Dedicated inverter and DC/DC laboratories are planned for a future collection version.
 
-For each later release, use **New version** on [this Zenodo record](https://zenodo.org/records/23244291), reserve that version's DOI before freezing its package, and include it in the new citation files. Upload the identical new release ZIP to GitHub and that Zenodo version. Each published version has its own DOI; all versions share the concept DOI above. Retain previous downloads and cite their specific version DOIs when the exact materials matter.
+For each later release, use **New version** on [this Zenodo record](https://zenodo.org/records/23284179), reserve that version's DOI before freezing its package, and include it in the new citation files. Upload the identical new release ZIP to GitHub and that Zenodo version. Each published version has its own DOI; all versions share the concept DOI above. Retain previous downloads and cite their specific version DOIs when the exact materials matter.
 
 Continue using directly managed Zenodo deposits for this collection. Avoid enabling automatic GitHub-to-Zenodo archiving alongside this route, which could create duplicate records for the same release.
 

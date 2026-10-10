@@ -4,18 +4,19 @@
 
 Author: Alejandro Gómez Yepes  
 Affiliation: Universidade de Vigo  
-Collection version: 1.0  
-Status: public GitHub release; Zenodo deposit pending  
-First public release date: 2026-10-07  
-Zenodo DOI: pending  
+Collection version: 1.0.1  
+Release date: 2026-10-10  
+First collection release: 2026-10-07  
+Zenodo version DOI: [10.5281/zenodo.23284179](https://doi.org/10.5281/zenodo.23284179)  
+Collection concept DOI: [10.5281/zenodo.23244290](https://doi.org/10.5281/zenodo.23244290)  
 Online collection: [https://agyepes.github.io/power-electronics-interactive-html/](https://agyepes.github.io/power-electronics-interactive-html/)  
-Archived GitHub release: [version 1.0](https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0)
+Archived release: [Zenodo](https://zenodo.org/records/23284179) · [GitHub version 1.0.1](https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0.1)
 
 Thirteen interactive HTML laboratories support university-level Power Electronics learning through explanations, calculations, plots and self-assessment. The collection is intended for students, instructors using demonstrations or guided activities, and independent learners with basic circuit knowledge.
 
 ### Start here
 
-Use the [online collection](https://agyepes.github.io/power-electronics-interactive-html/) or [download the complete version 1.0 ZIP](https://github.com/agyepes/power-electronics-interactive-html/releases/download/v1.0/Interactive_HTML_Learning_Resources_for_Power_Electronics_v1.0.zip). The [GitHub release](https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0) identifies this exact collection snapshot.
+Use the [online collection](https://agyepes.github.io/power-electronics-interactive-html/) or [download the complete version 1.0.1 ZIP](https://github.com/agyepes/power-electronics-interactive-html/releases/download/v1.0.1/Interactive_HTML_Learning_Resources_for_Power_Electronics_v1.0.1.zip). The [GitHub release](https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0.1) identifies this exact collection snapshot.
 
 Open [index.html](index.html) in a browser with JavaScript enabled. For a download, extract the whole collection first and retain the filenames and folder contents. Each laboratory contains its own scripts and styling and can run offline; external reference links require an internet connection.
 
@@ -31,11 +32,11 @@ Read [DOCUMENTATION.html](DOCUMENTATION.html) for the browser-readable user guid
 | [LICENSE-CONTENT.txt](LICENSE-CONTENT.txt) and [LICENSE-CODE.txt](LICENSE-CODE.txt) | Complete CC BY 4.0 and MIT legal terms |
 | [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt) | External references, third-party terms and credits |
 | [CITATION.md](CITATION.md) | Author, title, version, publication fields, citation templates and version/concept DOI guidance |
-| [CHANGELOG.md](CHANGELOG.md) | The prepared first release, subsequent version plans and integrity-file conventions |
+| [CHANGELOG.md](CHANGELOG.md) | Release history, subsequent version plans and integrity-file conventions |
 | [MANIFEST.json](MANIFEST.json) and [SHA256SUMS.txt](SHA256SUMS.txt) | Exact expected filenames, sizes, SHA-256 checksums and HTML source provenance |
-| [ZENODO_METADATA.txt](ZENODO_METADATA.txt) | Local preparation for entering a future Zenodo record |
+| [ZENODO_METADATA.txt](ZENODO_METADATA.txt) | Release metadata, identifiers and component-specific licence scopes |
 
-### Laboratories in version 1.0
+### Laboratories in version 1.0.1
 
 | No. | Laboratory | File |
 | --- | --- | --- |
@@ -53,7 +54,7 @@ Read [DOCUMENTATION.html](DOCUMENTATION.html) for the browser-readable user guid
 | 12 | Three-phase half-wave SCR rectifier | [12 - Controlled Rectifiers - Three-Phase Half-Wave.html](12%20-%20Controlled%20Rectifiers%20-%20Three-Phase%20Half-Wave.html) |
 | 13 | Three-phase fully controlled SCR bridge | [13 - Controlled Rectifiers - Three-Phase Full-Wave.html](13%20-%20Controlled%20Rectifiers%20-%20Three-Phase%20Full-Wave.html) |
 
-Version 1.0 includes power semiconductor devices, control and protection, three concept reviews and eight rectifier laboratories. Each diode/SCR group covers single-phase and three-phase half-wave and full-wave circuits. Dedicated inverter and DC/DC laboratories are planned for a future version. Existing controlled rectifiers already address inverting operation where their circuit assumptions permit it.
+Version 1.0.1 includes power semiconductor devices, control and protection, three concept reviews and eight rectifier laboratories. Each diode/SCR group covers single-phase and three-phase half-wave and full-wave circuits. Dedicated inverter and DC/DC laboratories are planned for a future version. Existing controlled rectifiers already address inverting operation where their circuit assumptions permit it.
 
 ### Languages and prerequisites
 
@@ -119,8 +120,10 @@ The PowerShell code example above is original implementation code under MIT; the
 
 ### Publication information
 
-Version 1.0 was first released publicly on **7 October 2026** through GitHub Pages and the [GitHub release](https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0). The collection website is [https://agyepes.github.io/power-electronics-interactive-html/](https://agyepes.github.io/power-electronics-interactive-html/). Zenodo publication and its DOI remain pending; no Zenodo record is claimed by this package.
+Version 1.0.1, released on **10 October 2026**, is a documentation and publication-metadata correction. It includes its own [Zenodo version DOI](https://doi.org/10.5281/zenodo.23284179), updated citation and download links, consistent collection labels, and regenerated integrity files. The thirteen laboratories, educational models, questions, saved-work keys and export schemas are retained.
 
-[CITATION.md](CITATION.md) gives the current website/release citation and explains future Zenodo citation. [ZENODO_METADATA.txt](ZENODO_METADATA.txt) prepares a later deposit and records the first public release date; it is not an uploaded record.
+The collection was first published as version 1.0 on GitHub on **7 October 2026** and archived on Zenodo on **8 October 2026**. Its [original GitHub release](https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0) and [version 1.0 Zenodo archive](https://doi.org/10.5281/zenodo.23244291) remain available with their original files and checksums.
 
-Keep the files and checksums in this archived release unchanged. Record corrections or additions in a new collection release, and retain the earlier archive. Public HTML basenames stay stable so course and external links continue working.
+[CITATION.md](CITATION.md) provides the citation for this exact release. [ZENODO_METADATA.txt](ZENODO_METADATA.txt) records its publication metadata and the component-specific licence scopes. The [concept DOI](https://doi.org/10.5281/zenodo.23244290) represents the evolving collection; cite the version DOI for reproducible use of these files.
+
+Keep released archives and their checksums unchanged. Record later corrections or additions in a new collection release and a new version of the same Zenodo record. Public HTML basenames stay stable so course and external links continue working.

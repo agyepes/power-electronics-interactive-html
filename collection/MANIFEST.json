@@ -2,18 +2,20 @@
   "schema": "epyra-html-collection-manifest-1",
   "collection": {
     "title": "Interactive HTML Learning Resources for Power Electronics",
-    "version": "1.0",
-    "publication_status": "published-github-zenodo-pending",
-    "publication_date": "2026-10-07",
-    "version_doi": null,
-    "concept_doi": null,
+    "version": "1.0.1",
+    "publication_status": "published",
+    "publication_date": "2026-10-10",
+    "version_doi": "10.5281/zenodo.23284179",
+    "concept_doi": "10.5281/zenodo.23244290",
     "public_homepage_url": "https://agyepes.github.io/power-electronics-interactive-html/",
-    "public_record_url": null,
+    "public_record_url": "https://zenodo.org/records/23284179",
     "author": {
       "name": "Alejandro Gómez Yepes",
       "given_name": "Alejandro",
       "family_name": "Gómez Yepes",
-      "affiliation": "Universidade de Vigo"
+      "affiliation": "Universidade de Vigo",
+      "orcid": "0000-0002-1423-4276",
+      "affiliation_ror": "https://ror.org/05rdf8595"
     },
     "interface_languages": [
       "en",
@@ -23,8 +25,9 @@
     "documentation_languages": [
       "en"
     ],
-    "public_release_url": "https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0",
-    "public_repository_url": "https://github.com/agyepes/power-electronics-interactive-html"
+    "public_release_url": "https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0.1",
+    "public_repository_url": "https://github.com/agyepes/power-electronics-interactive-html",
+    "first_publication_date": "2026-10-07"
   },
   "package": {
     "expected_file_count": 27,
@@ -84,299 +87,392 @@
   "files": [
     {
       "name": "01 - Power Semiconductor Devices.html",
-      "bytes": 616534,
-      "sha256": "367def1a7077a608fde226f45f994cc12e94597920f52aecb68f8bf311b48251",
+      "bytes": 617021,
+      "sha256": "ef536bd086df295ba910b7586f673bfa3eec001ac09accad17de881d0b402789",
       "role": "interactive laboratory",
       "html_provenance": {
-        "release-id": "EPYRA-20261006-01-CALCULATION-RECOVERY-9342F57F61FB",
-        "release-date": "2026-10-06T17:18:16.719301+00:00",
-        "parent-release-id": "EPYRA-20261006-01-PUBLICATION-REVIEW-E43B97E64AA2",
-        "parent-html-sha256": "c34d2a65fe34e84cbfdb75e9591f5ecb8078b49f4f790af8cbe4fa8df18ea223",
-        "parent-sha256": "c34d2a65fe34e84cbfdb75e9591f5ecb8078b49f4f790af8cbe4fa8df18ea223",
+        "release-id": "EPYRA-20261010-01-COLLECTION-1-0-1-DOI-A76BFF4AB1D2",
+        "release-date": "2026-10-10T15:19:08.948447+00:00",
+        "parent-release-id": "EPYRA-20261006-01-CALCULATION-RECOVERY-9342F57F61FB",
+        "parent-html-sha256": "367def1a7077a608fde226f45f994cc12e94597920f52aecb68f8bf311b48251",
+        "parent-sha256": "367def1a7077a608fde226f45f994cc12e94597920f52aecb68f8bf311b48251",
         "requirements-revision": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+        "requirements-id": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
         "requirements-sha256": "6f719e019a25f9fc77efbc7705f9d177331a6badbeae3b3c1c1db0cc80974055"
       },
-      "laboratory_id": "semiconductors"
+      "laboratory_id": "semiconductors",
+      "source_filename": "01 - Power Semiconductor Devices.html",
+      "source_sha256": "367def1a7077a608fde226f45f994cc12e94597920f52aecb68f8bf311b48251",
+      "source_release_id": "EPYRA-20261006-01-CALCULATION-RECOVERY-9342F57F61FB"
     },
     {
       "name": "02 - Control and Protection in Power Electronics.html",
-      "bytes": 504800,
-      "sha256": "ba3fdd80baac5f12c3c641fb2d6410cd739894ef0524e4c18ac4fd51ccbd9e46",
+      "bytes": 505287,
+      "sha256": "002aef513260c9e33f99fbd482ab878ca035d4c4ad9822860041a8480d76c6dc",
       "role": "interactive laboratory",
       "html_provenance": {
-        "release-id": "EPYRA-20261006-02-CALCULATION-RECOVERY-ABA3703A8EDA",
-        "release-date": "2026-10-06T17:18:17.053362+00:00",
-        "parent-release-id": "EPYRA-20261006-02-PUBLICATION-REVIEW-239CC18F2B5F",
-        "parent-html-sha256": "fda6eedbe20da1cc4c15013c7d0171c7d32d05c87f89b5411880aa55f6f369f2",
-        "parent-sha256": "fda6eedbe20da1cc4c15013c7d0171c7d32d05c87f89b5411880aa55f6f369f2",
+        "release-id": "EPYRA-20261010-02-COLLECTION-1-0-1-DOI-179990E66007",
+        "release-date": "2026-10-10T15:19:08.948447+00:00",
+        "parent-release-id": "EPYRA-20261006-02-CALCULATION-RECOVERY-ABA3703A8EDA",
+        "parent-html-sha256": "ba3fdd80baac5f12c3c641fb2d6410cd739894ef0524e4c18ac4fd51ccbd9e46",
+        "parent-sha256": "ba3fdd80baac5f12c3c641fb2d6410cd739894ef0524e4c18ac4fd51ccbd9e46",
         "requirements-revision": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+        "requirements-id": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
         "requirements-sha256": "6f719e019a25f9fc77efbc7705f9d177331a6badbeae3b3c1c1db0cc80974055"
       },
-      "laboratory_id": "control-protection"
+      "laboratory_id": "control-protection",
+      "source_filename": "02 - Control and Protection in Power Electronics.html",
+      "source_sha256": "ba3fdd80baac5f12c3c641fb2d6410cd739894ef0524e4c18ac4fd51ccbd9e46",
+      "source_release_id": "EPYRA-20261006-02-CALCULATION-RECOVERY-ABA3703A8EDA"
     },
     {
       "name": "03 - RMS and Mean Value Calculation Review.html",
-      "bytes": 195363,
-      "sha256": "e9f4a90bae1c4390d87a24e0e19887f80bf04afb79993c2baaf257f81f8f6589",
+      "bytes": 195846,
+      "sha256": "255138e984267f1c73b9818dff7a8237591b45aee0eb760bdd683e61c457adc4",
       "role": "interactive laboratory",
       "html_provenance": {
-        "release-id": "EPYRA-20261006-RMS-MEAN-PUBLIC-LICENSING-35AA4EC34CAE",
-        "release-date": "2026-10-06T10:57:44.287487+00:00",
-        "parent-release-id": "EPYRA-20261005-RMS-MEAN-COLLECTION-1-0-E2D0FAD5D917",
-        "parent-html-sha256": "6a138aa04bbec888fd9647736cfbb508edefa462741f928d1213d7fc48c6cce1",
-        "parent-sha256": "6a138aa04bbec888fd9647736cfbb508edefa462741f928d1213d7fc48c6cce1",
+        "release-id": "EPYRA-20261010-03-COLLECTION-1-0-1-DOI-86DC4659A224",
+        "release-date": "2026-10-10T15:19:08.948447+00:00",
+        "parent-release-id": "EPYRA-20261006-RMS-MEAN-PUBLIC-LICENSING-35AA4EC34CAE",
+        "parent-html-sha256": "e9f4a90bae1c4390d87a24e0e19887f80bf04afb79993c2baaf257f81f8f6589",
+        "parent-sha256": "e9f4a90bae1c4390d87a24e0e19887f80bf04afb79993c2baaf257f81f8f6589",
         "requirements-revision": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+        "requirements-id": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
         "requirements-sha256": "6f719e019a25f9fc77efbc7705f9d177331a6badbeae3b3c1c1db0cc80974055"
       },
-      "laboratory_id": "rms-mean"
+      "laboratory_id": "rms-mean",
+      "source_filename": "03 - RMS and Mean Value Calculation Review.html",
+      "source_sha256": "e9f4a90bae1c4390d87a24e0e19887f80bf04afb79993c2baaf257f81f8f6589",
+      "source_release_id": "EPYRA-20261006-RMS-MEAN-PUBLIC-LICENSING-35AA4EC34CAE"
     },
     {
       "name": "04 - Fourier Harmonic Decomposition.html",
-      "bytes": 420186,
-      "sha256": "c959443ea388e86a6f83db86aec5696cb2033594e42b23c1f1dbceac7fe51b81",
+      "bytes": 420670,
+      "sha256": "abc5516a7c8015186672ea6fbbf4829cf4d937a1d1276151062909ba73fcc604",
       "role": "interactive laboratory",
       "html_provenance": {
-        "release-id": "EPYRA-20261006-04-CALCULATION-RECOVERY-95472BC1CBD7",
-        "release-date": "2026-10-06T17:09:15.862614+00:00",
-        "parent-release-id": "EPYRA-20261006-FOURIER-PUBLIC-LICENSING-EBFE5F54AED8",
-        "parent-html-sha256": "2889aa644fc7aae3119b04ba1a8404175cc2e1f49f42a60320473e315eca2772",
-        "parent-sha256": "2889aa644fc7aae3119b04ba1a8404175cc2e1f49f42a60320473e315eca2772",
+        "release-id": "EPYRA-20261010-04-COLLECTION-1-0-1-DOI-A120307F5CA4",
+        "release-date": "2026-10-10T15:19:08.948447+00:00",
+        "parent-release-id": "EPYRA-20261006-04-CALCULATION-RECOVERY-95472BC1CBD7",
+        "parent-html-sha256": "c959443ea388e86a6f83db86aec5696cb2033594e42b23c1f1dbceac7fe51b81",
+        "parent-sha256": "c959443ea388e86a6f83db86aec5696cb2033594e42b23c1f1dbceac7fe51b81",
         "requirements-revision": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+        "requirements-id": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
         "requirements-sha256": "6f719e019a25f9fc77efbc7705f9d177331a6badbeae3b3c1c1db0cc80974055"
       },
-      "laboratory_id": "fourier"
+      "laboratory_id": "fourier",
+      "source_filename": "04 - Fourier Harmonic Decomposition.html",
+      "source_sha256": "c959443ea388e86a6f83db86aec5696cb2033594e42b23c1f1dbceac7fe51b81",
+      "source_release_id": "EPYRA-20261006-04-CALCULATION-RECOVERY-95472BC1CBD7"
     },
     {
       "name": "05 - Three-Phase Electrical System Review.html",
-      "bytes": 368000,
-      "sha256": "41bb45275af02d48e30cf7eefdc45a643743ed77942868e32a555986500847df",
+      "bytes": 368495,
+      "sha256": "56a22913831d1e67f8c3c2e570d32d9fc249b54bded5f82af8d7385845a41441",
       "role": "interactive laboratory",
       "html_provenance": {
-        "release-id": "EPYRA-20261006-05-CALCULATION-RECOVERY-FAC2D8D27FBC",
-        "release-date": "2026-10-06T17:18:17.367119+00:00",
-        "parent-release-id": "EPYRA-20261006-05-PRINT-FLOW-39A3AA42C74A",
-        "parent-html-sha256": "b9a129df2c99883636f73b086cff3b3f8b9b073264aa3c897aa8cc0ae20433d6",
-        "parent-sha256": "b9a129df2c99883636f73b086cff3b3f8b9b073264aa3c897aa8cc0ae20433d6",
+        "release-id": "EPYRA-20261010-05-COLLECTION-1-0-1-DOI-FA75F6ED8DF3",
+        "release-date": "2026-10-10T15:19:08.948447+00:00",
+        "parent-release-id": "EPYRA-20261006-05-CALCULATION-RECOVERY-FAC2D8D27FBC",
+        "parent-html-sha256": "41bb45275af02d48e30cf7eefdc45a643743ed77942868e32a555986500847df",
+        "parent-sha256": "41bb45275af02d48e30cf7eefdc45a643743ed77942868e32a555986500847df",
         "requirements-revision": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+        "requirements-id": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
         "requirements-sha256": "6f719e019a25f9fc77efbc7705f9d177331a6badbeae3b3c1c1db0cc80974055"
       },
-      "laboratory_id": "three-phase-review"
+      "laboratory_id": "three-phase-review",
+      "source_filename": "05 - Three-Phase Electrical System Review.html",
+      "source_sha256": "41bb45275af02d48e30cf7eefdc45a643743ed77942868e32a555986500847df",
+      "source_release_id": "EPYRA-20261006-05-CALCULATION-RECOVERY-FAC2D8D27FBC"
     },
     {
       "name": "06 - Uncontrolled Rectifiers - Single-Phase Half-Wave.html",
-      "bytes": 843707,
-      "sha256": "43bd74ab550d208748723137f9c513d6346595155e26d3ce0446f7520bf16af8",
+      "bytes": 844221,
+      "sha256": "446171ac098932892e49418f0ffccb653e1e3788fec10cd0804f140766a35375",
       "role": "interactive laboratory",
       "html_provenance": {
-        "release-id": "EPYRA-20261006-06-PRINT-FLOW-13331EB2FC13",
-        "release-date": "2026-10-06",
-        "parent-release-id": "EPYRA-20261006-RECTIFIER-PUBLIC-LICENSING-8B1A94DE564F",
-        "parent-html-sha256": "0231eb2f846dc2cbd0123703d21190ee236ee05be407bfcdc0fbf7c9b7e3c97d",
-        "parent-sha256": "0231eb2f846dc2cbd0123703d21190ee236ee05be407bfcdc0fbf7c9b7e3c97d",
+        "release-id": "EPYRA-20261010-06-COLLECTION-1-0-1-DOI-B29DFB95D2C5",
+        "release-date": "2026-10-10T15:19:08.948447+00:00",
+        "parent-release-id": "EPYRA-20261006-06-PRINT-FLOW-13331EB2FC13",
+        "parent-html-sha256": "43bd74ab550d208748723137f9c513d6346595155e26d3ce0446f7520bf16af8",
+        "parent-sha256": "43bd74ab550d208748723137f9c513d6346595155e26d3ce0446f7520bf16af8",
         "requirements-revision": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+        "requirements-id": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
         "requirements-sha256": "6f719e019a25f9fc77efbc7705f9d177331a6badbeae3b3c1c1db0cc80974055"
       },
-      "laboratory_id": "rectifier"
+      "laboratory_id": "rectifier",
+      "source_filename": "06 - Uncontrolled Rectifiers - Single-Phase Half-Wave.html",
+      "source_sha256": "43bd74ab550d208748723137f9c513d6346595155e26d3ce0446f7520bf16af8",
+      "source_release_id": "EPYRA-20261006-06-PRINT-FLOW-13331EB2FC13"
     },
     {
       "name": "07 - Uncontrolled Rectifiers - Single-Phase Full-Wave.html",
-      "bytes": 298269,
-      "sha256": "2a109d5630db4abe15ca01f15ac9f27d25fe7c1c7032069f79f2ca74fdb30f3f",
+      "bytes": 298773,
+      "sha256": "b3565c483116fe407d9c77a8a1e34e814abe8f1b8f6f393c64645993c4df5c56",
       "role": "interactive laboratory",
       "html_provenance": {
-        "release-id": "EPYRA-20261006-07-PRINT-FLOW-CB941C46044C",
-        "release-date": "2026-10-06",
-        "parent-release-id": "EPYRA-20261006-FULL-WAVE-RECTIFIER-PUBLIC-LICENSING-2149299F46D4",
-        "parent-html-sha256": "53d662e6271495fb79651ae08558168123eaa58587cd37e3535901ce73674a90",
-        "parent-sha256": "53d662e6271495fb79651ae08558168123eaa58587cd37e3535901ce73674a90",
+        "release-id": "EPYRA-20261010-07-COLLECTION-1-0-1-DOI-DA09AFEE71EC",
+        "release-date": "2026-10-10T15:19:08.948447+00:00",
+        "parent-release-id": "EPYRA-20261006-07-PRINT-FLOW-CB941C46044C",
+        "parent-html-sha256": "2a109d5630db4abe15ca01f15ac9f27d25fe7c1c7032069f79f2ca74fdb30f3f",
+        "parent-sha256": "2a109d5630db4abe15ca01f15ac9f27d25fe7c1c7032069f79f2ca74fdb30f3f",
         "requirements-revision": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+        "requirements-id": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
         "requirements-sha256": "6f719e019a25f9fc77efbc7705f9d177331a6badbeae3b3c1c1db0cc80974055"
       },
-      "laboratory_id": "full-wave-rectifier"
+      "laboratory_id": "full-wave-rectifier",
+      "source_filename": "07 - Uncontrolled Rectifiers - Single-Phase Full-Wave.html",
+      "source_sha256": "2a109d5630db4abe15ca01f15ac9f27d25fe7c1c7032069f79f2ca74fdb30f3f",
+      "source_release_id": "EPYRA-20261006-07-PRINT-FLOW-CB941C46044C"
     },
     {
       "name": "08 - Uncontrolled Rectifiers - Three-Phase Half-Wave.html",
-      "bytes": 388957,
-      "sha256": "d5fbd66a9b0f9655d2deec291abede63c852f45617e3da6b24fe06f5da05659b",
+      "bytes": 389449,
+      "sha256": "10cc49aa8220eeae83825acc5afa6030368d721c230eed73c584683d02f15b7e",
       "role": "interactive laboratory",
       "html_provenance": {
-        "release-id": "EPYRA-20261006-08-PRINT-FLOW-EA0949513E19",
-        "release-date": "2026-10-06",
-        "parent-release-id": "EPYRA-20261006-THREE-PHASE-HALF-WAVE-RECTIFIER-PUBLIC-LICENSING-48352AFE2695",
-        "parent-html-sha256": "d050b772d7fe3e8946164108cfe9595b21522495df6b845588a3e1ad06e42f90",
-        "parent-sha256": "d050b772d7fe3e8946164108cfe9595b21522495df6b845588a3e1ad06e42f90",
+        "release-id": "EPYRA-20261010-08-COLLECTION-1-0-1-DOI-D571E8865193",
+        "release-date": "2026-10-10T15:19:08.948447+00:00",
+        "parent-release-id": "EPYRA-20261006-08-PRINT-FLOW-EA0949513E19",
+        "parent-html-sha256": "d5fbd66a9b0f9655d2deec291abede63c852f45617e3da6b24fe06f5da05659b",
+        "parent-sha256": "d5fbd66a9b0f9655d2deec291abede63c852f45617e3da6b24fe06f5da05659b",
         "requirements-revision": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+        "requirements-id": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
         "requirements-sha256": "6f719e019a25f9fc77efbc7705f9d177331a6badbeae3b3c1c1db0cc80974055"
       },
-      "laboratory_id": "three-phase-half-wave-rectifier"
+      "laboratory_id": "three-phase-half-wave-rectifier",
+      "source_filename": "08 - Uncontrolled Rectifiers - Three-Phase Half-Wave.html",
+      "source_sha256": "d5fbd66a9b0f9655d2deec291abede63c852f45617e3da6b24fe06f5da05659b",
+      "source_release_id": "EPYRA-20261006-08-PRINT-FLOW-EA0949513E19"
     },
     {
       "name": "09 - Uncontrolled Rectifiers - Three-Phase Full-Wave.html",
-      "bytes": 432097,
-      "sha256": "9546083b618ea95f578124e0d926cd77843ccc4cc4d22a0c9c86f2f308ec65d7",
+      "bytes": 432564,
+      "sha256": "055ed166503b16556ce344e8428ad8da59799c99da494456f7b068394da50763",
       "role": "interactive laboratory",
       "html_provenance": {
-        "release-id": "EPYRA-20261006-DIODE-THREE-BRIDGE-SOURCE-VISIBILITY-PUBLIC-B369A7397813",
-        "release-date": "2026-10-06",
-        "parent-release-id": "EPYRA-20261006-DIODE-THREE-BRIDGE-SIX-LINE-VOLTAGES-PUBLIC-BE79CC806104",
-        "parent-html-sha256": "461fdb0f7ca11d0b9459b42e0ac8776d94b21e0329b00cd4b22a68b4ebe54a6d",
-        "parent-sha256": "461fdb0f7ca11d0b9459b42e0ac8776d94b21e0329b00cd4b22a68b4ebe54a6d",
+        "release-id": "EPYRA-20261010-09-COLLECTION-1-0-1-DOI-4CBFB5F556DC",
+        "release-date": "2026-10-10T15:19:08.948447+00:00",
+        "parent-release-id": "EPYRA-20261006-DIODE-THREE-BRIDGE-SOURCE-VISIBILITY-PUBLIC-B369A7397813",
+        "parent-html-sha256": "9546083b618ea95f578124e0d926cd77843ccc4cc4d22a0c9c86f2f308ec65d7",
+        "parent-sha256": "9546083b618ea95f578124e0d926cd77843ccc4cc4d22a0c9c86f2f308ec65d7",
         "requirements-revision": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+        "requirements-id": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
         "requirements-sha256": "6f719e019a25f9fc77efbc7705f9d177331a6badbeae3b3c1c1db0cc80974055"
       },
-      "laboratory_id": "diode-three-bridge"
+      "laboratory_id": "diode-three-bridge",
+      "source_filename": "09 - Uncontrolled Rectifiers - Three-Phase Full-Wave.html",
+      "source_sha256": "9546083b618ea95f578124e0d926cd77843ccc4cc4d22a0c9c86f2f308ec65d7",
+      "source_release_id": "EPYRA-20261006-DIODE-THREE-BRIDGE-SOURCE-VISIBILITY-PUBLIC-B369A7397813"
     },
     {
       "name": "10 - Controlled Rectifiers - Single-Phase Half-Wave.html",
-      "bytes": 419983,
-      "sha256": "4dc68df3165ae53e0f94b791a924b1d06566c150a26b071e6c995b5f29f6fd79",
+      "bytes": 420505,
+      "sha256": "c145ede6911af9c2109fd382b52108bae9df5e6c5cc4b48ccf0e61902b18cdbe",
       "role": "interactive laboratory",
       "html_provenance": {
-        "release-id": "EPYRA-20261006-10-EXPANDED-LEGEND-6A8499EA21E9",
-        "release-date": "2026-10-06",
-        "parent-release-id": "EPYRA-20261006-10-PRINT-FLOW-5A7F41D5EE9D",
-        "parent-html-sha256": "096513f4974b22cb534501cd798ed490bae853361c3c4a97f88727233d905bb1",
-        "parent-sha256": "096513f4974b22cb534501cd798ed490bae853361c3c4a97f88727233d905bb1",
+        "release-id": "EPYRA-20261010-10-COLLECTION-1-0-1-DOI-E3DAD3664780",
+        "release-date": "2026-10-10T15:19:08.948447+00:00",
+        "parent-release-id": "EPYRA-20261006-10-EXPANDED-LEGEND-6A8499EA21E9",
+        "parent-html-sha256": "4dc68df3165ae53e0f94b791a924b1d06566c150a26b071e6c995b5f29f6fd79",
+        "parent-sha256": "4dc68df3165ae53e0f94b791a924b1d06566c150a26b071e6c995b5f29f6fd79",
         "requirements-revision": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+        "requirements-id": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
         "requirements-sha256": "6f719e019a25f9fc77efbc7705f9d177331a6badbeae3b3c1c1db0cc80974055"
       },
-      "laboratory_id": "scr-half"
+      "laboratory_id": "scr-half",
+      "source_filename": "10 - Controlled Rectifiers - Single-Phase Half-Wave.html",
+      "source_sha256": "4dc68df3165ae53e0f94b791a924b1d06566c150a26b071e6c995b5f29f6fd79",
+      "source_release_id": "EPYRA-20261006-10-EXPANDED-LEGEND-6A8499EA21E9"
     },
     {
       "name": "11 - Controlled Rectifiers - Single-Phase Full-Wave.html",
-      "bytes": 421105,
-      "sha256": "edc434543546670c4d4027dbf91d42178024690d8ba993a69178f7f9c09050fd",
+      "bytes": 421627,
+      "sha256": "1ce1653fc54ac124b25eca340c2ec38986d89a5407a00f9ad4b8d1ff7dde4a68",
       "role": "interactive laboratory",
       "html_provenance": {
-        "release-id": "EPYRA-20261006-11-EXPANDED-LEGEND-5043C0C930EC",
-        "release-date": "2026-10-06",
-        "parent-release-id": "EPYRA-20261006-11-PRINT-FLOW-969D88A68809",
-        "parent-html-sha256": "7ce868306fb38afe5f8bb15b7b779722eeaf53776af22f7655c57615560613bf",
-        "parent-sha256": "7ce868306fb38afe5f8bb15b7b779722eeaf53776af22f7655c57615560613bf",
+        "release-id": "EPYRA-20261010-11-COLLECTION-1-0-1-DOI-B540E2FCCA5C",
+        "release-date": "2026-10-10T15:19:08.948447+00:00",
+        "parent-release-id": "EPYRA-20261006-11-EXPANDED-LEGEND-5043C0C930EC",
+        "parent-html-sha256": "edc434543546670c4d4027dbf91d42178024690d8ba993a69178f7f9c09050fd",
+        "parent-sha256": "edc434543546670c4d4027dbf91d42178024690d8ba993a69178f7f9c09050fd",
         "requirements-revision": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+        "requirements-id": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
         "requirements-sha256": "6f719e019a25f9fc77efbc7705f9d177331a6badbeae3b3c1c1db0cc80974055"
       },
-      "laboratory_id": "scr-single-bridge"
+      "laboratory_id": "scr-single-bridge",
+      "source_filename": "11 - Controlled Rectifiers - Single-Phase Full-Wave.html",
+      "source_sha256": "edc434543546670c4d4027dbf91d42178024690d8ba993a69178f7f9c09050fd",
+      "source_release_id": "EPYRA-20261006-11-EXPANDED-LEGEND-5043C0C930EC"
     },
     {
       "name": "12 - Controlled Rectifiers - Three-Phase Half-Wave.html",
-      "bytes": 433666,
-      "sha256": "36bb137e58d1899170af05a0e39e0c9f67626ff84bba558d5fd4185561579ed0",
+      "bytes": 434188,
+      "sha256": "deb8161dde0d64b3052f200dbaa912869d0c9d06c6e38490eafbc1d0ae0c0b51",
       "role": "interactive laboratory",
       "html_provenance": {
-        "release-id": "EPYRA-20261006-12-EXPANDED-LEGEND-734C6C6FF931",
-        "release-date": "2026-10-06",
-        "parent-release-id": "EPYRA-20261006-12-PRINT-FLOW-698F0BCE0A62",
-        "parent-html-sha256": "f9681c4b0ff0c9ac58b9346a507b74388ff6024f6e9b80708b8f70659afbcf30",
-        "parent-sha256": "f9681c4b0ff0c9ac58b9346a507b74388ff6024f6e9b80708b8f70659afbcf30",
+        "release-id": "EPYRA-20261010-12-COLLECTION-1-0-1-DOI-6F753E734E77",
+        "release-date": "2026-10-10T15:19:08.948447+00:00",
+        "parent-release-id": "EPYRA-20261006-12-EXPANDED-LEGEND-734C6C6FF931",
+        "parent-html-sha256": "36bb137e58d1899170af05a0e39e0c9f67626ff84bba558d5fd4185561579ed0",
+        "parent-sha256": "36bb137e58d1899170af05a0e39e0c9f67626ff84bba558d5fd4185561579ed0",
         "requirements-revision": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+        "requirements-id": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
         "requirements-sha256": "6f719e019a25f9fc77efbc7705f9d177331a6badbeae3b3c1c1db0cc80974055"
       },
-      "laboratory_id": "scr-three-half"
+      "laboratory_id": "scr-three-half",
+      "source_filename": "12 - Controlled Rectifiers - Three-Phase Half-Wave.html",
+      "source_sha256": "36bb137e58d1899170af05a0e39e0c9f67626ff84bba558d5fd4185561579ed0",
+      "source_release_id": "EPYRA-20261006-12-EXPANDED-LEGEND-734C6C6FF931"
     },
     {
       "name": "13 - Controlled Rectifiers - Three-Phase Full-Wave.html",
-      "bytes": 457306,
-      "sha256": "7a09e01e0622767e7a0a323db9c95bf67f8a09643080c219818a94d8a332eaa9",
+      "bytes": 457777,
+      "sha256": "de4db595cf29c2fb03efa63b57f29d7d651b9dce37927f775060ff231dcd2f9a",
       "role": "interactive laboratory",
       "html_provenance": {
-        "release-id": "EPYRA-20261006-SCR-THREE-BRIDGE-SOURCE-VISIBILITY-PUBLIC-EB31951CB4D2",
-        "release-date": "2026-10-06",
-        "parent-release-id": "EPYRA-20261006-SCR-THREE-BRIDGE-SIX-LINE-VOLTAGES-PUBLIC-BEDDDFE31245",
-        "parent-html-sha256": "7f5abb8e6f7ed3013e9612238f788bf2afe23b8cedf0ed022ba5162af6486895",
-        "parent-sha256": "7f5abb8e6f7ed3013e9612238f788bf2afe23b8cedf0ed022ba5162af6486895",
+        "release-id": "EPYRA-20261010-13-COLLECTION-1-0-1-DOI-AB5D2456E28D",
+        "release-date": "2026-10-10T15:19:08.948447+00:00",
+        "parent-release-id": "EPYRA-20261006-SCR-THREE-BRIDGE-SOURCE-VISIBILITY-PUBLIC-EB31951CB4D2",
+        "parent-html-sha256": "7a09e01e0622767e7a0a323db9c95bf67f8a09643080c219818a94d8a332eaa9",
+        "parent-sha256": "7a09e01e0622767e7a0a323db9c95bf67f8a09643080c219818a94d8a332eaa9",
         "requirements-revision": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+        "requirements-id": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
         "requirements-sha256": "6f719e019a25f9fc77efbc7705f9d177331a6badbeae3b3c1c1db0cc80974055"
       },
-      "laboratory_id": "scr-three-bridge"
+      "laboratory_id": "scr-three-bridge",
+      "source_filename": "13 - Controlled Rectifiers - Three-Phase Full-Wave.html",
+      "source_sha256": "7a09e01e0622767e7a0a323db9c95bf67f8a09643080c219818a94d8a332eaa9",
+      "source_release_id": "EPYRA-20261006-SCR-THREE-BRIDGE-SOURCE-VISIBILITY-PUBLIC-EB31951CB4D2"
     },
     {
       "name": "CHANGELOG.md",
-      "bytes": 4317,
-      "sha256": "6cd93bdd6da823108860859b7a0a0dd4b07e615bb2a48488bb845c39eb417302",
-      "role": "public-release change log"
+      "bytes": 5920,
+      "sha256": "fb5318b1b1bd2187346566b22eee8d0aee46f65ad418a6d4880eba37a5db47da",
+      "role": "public-release change log",
+      "source_filename": "CHANGELOG.md",
+      "source_sha256": "6cd93bdd6da823108860859b7a0a0dd4b07e615bb2a48488bb845c39eb417302"
     },
     {
       "name": "CITATION.md",
-      "bytes": 6135,
-      "sha256": "2354f8b4a21528dfbee5fc47e7120f6ad704a3f684ea65c9a0afe74344459c4e",
-      "role": "citation instructions"
+      "bytes": 5428,
+      "sha256": "fe7ca7bd5dfade28fa10794616d0a086b53847ff1422a6743f78e83da9a9b6dc",
+      "role": "citation instructions",
+      "source_filename": "CITATION.md",
+      "source_sha256": "2354f8b4a21528dfbee5fc47e7120f6ad704a3f684ea65c9a0afe74344459c4e"
     },
     {
       "name": "COLLECTION_DESCRIPTION.md",
-      "bytes": 14480,
-      "sha256": "b35de700b5bda0ee9fcda650df66f1d05f680a67efddb1c81eeb19eef7676c16",
-      "role": "learning objectives, inventory and model limitations"
+      "bytes": 15036,
+      "sha256": "1a21a40da6340632e66da00ffcb834e00976f7e476a1e4d1dca042ea33c9f003",
+      "role": "learning objectives, inventory and model limitations",
+      "source_filename": "COLLECTION_DESCRIPTION.md",
+      "source_sha256": "b35de700b5bda0ee9fcda650df66f1d05f680a67efddb1c81eeb19eef7676c16"
     },
     {
       "name": "DOCUMENTATION.html",
-      "bytes": 51411,
-      "sha256": "02f6e2201bbb2487bda7b4a2a5d9e2c50eea363d560ab92daefc42d02479ca72",
+      "bytes": 53605,
+      "sha256": "c19254b123e33e5a06a8de455b5fa52f312de0d9fb4e79981034ff5ce00abd36",
       "role": "browser-readable collection documentation",
-      "html_provenance": {}
+      "html_provenance": {
+        "release-id": "EPYRA-20261010-DOCUMENTATION-1-0-1-DOI-7CC646688477",
+        "release-date": "2026-10-10T15:19:08.948447+00:00",
+        "parent-html-sha256": "02f6e2201bbb2487bda7b4a2a5d9e2c50eea363d560ab92daefc42d02479ca72",
+        "requirements-revision": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+        "requirements-id": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+        "requirements-sha256": "6f719e019a25f9fc77efbc7705f9d177331a6badbeae3b3c1c1db0cc80974055"
+      },
+      "source_filename": "DOCUMENTATION.html",
+      "source_sha256": "02f6e2201bbb2487bda7b4a2a5d9e2c50eea363d560ab92daefc42d02479ca72",
+      "source_release_id": null
     },
     {
       "name": "index.html",
-      "bytes": 46584,
-      "sha256": "6cc51c863dc38256e4eb00b66e2ea05f4636c36d32f7be6529f5f071155105c4",
+      "bytes": 47257,
+      "sha256": "3e102de308333e6ab6099811ed1d62b4b970f8ae9c9f0836ab9ac7c256bc4225",
       "role": "laboratory homepage",
       "html_provenance": {
-        "release-id": "EPYRA-20261007-SUITE-INDEX-GITHUB-PUBLICATION-3633615AFA0B",
-        "release-date": "2026-10-07T07:53:11.906978+00:00",
-        "parent-release-id": "EPYRA-20261007-SUITE-INDEX-DOCUMENTATION-716BFA1A4B2F",
-        "parent-html-sha256": "7631199a2cdae510793365d84d8d976361a83964f4481f67ece2b6afdaa4ce78",
-        "parent-sha256": "7631199a2cdae510793365d84d8d976361a83964f4481f67ece2b6afdaa4ce78",
+        "release-id": "EPYRA-20261010-INDEX-COLLECTION-1-0-1-DOI-9ACC73FF3E8E",
+        "release-date": "2026-10-10T15:19:08.948447+00:00",
+        "parent-release-id": "EPYRA-20261007-SUITE-INDEX-GITHUB-PUBLICATION-3633615AFA0B",
+        "parent-html-sha256": "6cc51c863dc38256e4eb00b66e2ea05f4636c36d32f7be6529f5f071155105c4",
+        "parent-sha256": "6cc51c863dc38256e4eb00b66e2ea05f4636c36d32f7be6529f5f071155105c4",
         "requirements-revision": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+        "requirements-id": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
         "requirements-sha256": "6f719e019a25f9fc77efbc7705f9d177331a6badbeae3b3c1c1db0cc80974055"
       },
-      "laboratory_id": "suite-index"
+      "laboratory_id": "suite-index",
+      "source_filename": "index.html",
+      "source_sha256": "6cc51c863dc38256e4eb00b66e2ea05f4636c36d32f7be6529f5f071155105c4",
+      "source_release_id": "EPYRA-20261007-SUITE-INDEX-GITHUB-PUBLICATION-3633615AFA0B"
     },
     {
       "name": "LICENSE-CODE.txt",
       "bytes": 1079,
       "sha256": "b0917077a56b36e3b08eed1e0b195e38d03b15d7b04d2e1298b9e343888ff7f6",
-      "role": "complete code licence"
+      "role": "complete code licence",
+      "source_filename": "LICENSE-CODE.txt",
+      "source_sha256": "b0917077a56b36e3b08eed1e0b195e38d03b15d7b04d2e1298b9e343888ff7f6"
     },
     {
       "name": "LICENSE-CONTENT.txt",
       "bytes": 18657,
       "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
-      "role": "complete content licence"
+      "role": "complete content licence",
+      "source_filename": "LICENSE-CONTENT.txt",
+      "source_sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
     },
     {
       "name": "LICENSING.txt",
-      "bytes": 4250,
-      "sha256": "ec4046fc33f51d2a7ef13392f388a4e475b1f9b33d7c1d878adc96f92c399c83",
-      "role": "licence scope and reuse notices"
+      "bytes": 4342,
+      "sha256": "e8b79d655bf364634de596093558251a1105c3a946346041412413f557ec860c",
+      "role": "licence scope and reuse notices",
+      "source_filename": "LICENSING.txt",
+      "source_sha256": "ec4046fc33f51d2a7ef13392f388a4e475b1f9b33d7c1d878adc96f92c399c83"
     },
     {
       "name": "README.md",
-      "bytes": 12040,
-      "sha256": "1630f1af4549f036223ba8598f6cac02f48e88dcf3bcd8338cbeaa456b69cee2",
-      "role": "collection overview and checksum instructions"
+      "bytes": 12677,
+      "sha256": "2a7c8c5295025d666933dd7764b019e94b2a6b8d5a010437d1eead26da9c3ad3",
+      "role": "collection overview and checksum instructions",
+      "source_filename": "README.md",
+      "source_sha256": "1630f1af4549f036223ba8598f6cac02f48e88dcf3bcd8338cbeaa456b69cee2"
     },
     {
       "name": "THIRD_PARTY_NOTICES.txt",
-      "bytes": 4746,
-      "sha256": "38da921a58dee132c9983bc1f6194f949e9a713cdace9065e9d02b38c6b16470",
-      "role": "third-party reference and rights notices"
+      "bytes": 4832,
+      "sha256": "6fee8015c5f51f4b71783578d6151a5ff34e9d22f08ccc9649ae27f17736075c",
+      "role": "third-party reference and rights notices",
+      "source_filename": "THIRD_PARTY_NOTICES.txt",
+      "source_sha256": "38da921a58dee132c9983bc1f6194f949e9a713cdace9065e9d02b38c6b16470"
     },
     {
       "name": "USER_GUIDE.md",
-      "bytes": 13071,
-      "sha256": "283008d125da16b5e26759f4a9aa958ac3eaa1220bf5bcf2e8d46306edf9f934",
-      "role": "user guide"
+      "bytes": 13267,
+      "sha256": "48d5acebf52fd87d1eb34dc6dbf2136d4082f36bbdb7e7557dd697015d374a7d",
+      "role": "user guide",
+      "source_filename": "USER_GUIDE.md",
+      "source_sha256": "283008d125da16b5e26759f4a9aa958ac3eaa1220bf5bcf2e8d46306edf9f934"
     },
     {
       "name": "ZENODO_METADATA.txt",
-      "bytes": 8355,
-      "sha256": "f90b09b8f1e3eea409d524e2fdc18f2b792641190c8434d28c8775cf5f9016e6",
-      "role": "local Zenodo metadata preparation"
+      "bytes": 8362,
+      "sha256": "f85a5aefe9e2ed2d6360e7dd37e95ddb1ab2bb965a942239233b3f91b2ec2f34",
+      "role": "local Zenodo metadata preparation",
+      "source_filename": "ZENODO_METADATA.txt",
+      "source_sha256": "f90b09b8f1e3eea409d524e2fdc18f2b792641190c8434d28c8775cf5f9016e6"
     }
   ],
   "release_snapshot": {
     "assembled_at_utc": "2026-10-07T07:53:11.906978+00:00",
     "payload_inventory_sha256": "18d92a66b2629beed5fd7a1b0f32e6b45547bcfa7d24cb1b41234c79ec6c3df3",
     "inventory_digest_method": "SHA-256 of UTF-8 compact JSON array of name, bytes and sha256 objects in this files order; final file hashes identify the release payload"
+  },
+  "requirements_document": {
+    "filename": "Common_Power_Electronics_HTML_Requirements.md",
+    "identifier": "PE-REQ-20261005-COLLECTION-VERSION-68C776D76629",
+    "sha256": "6f719e019a25f9fc77efbc7705f9d177331a6badbeae3b3c1c1db0cc80974055",
+    "included_in_package": false,
+    "note": "The referenced authoring requirements are external to this 27-file educational package; the original guide bytes are preserved."
   }
 }

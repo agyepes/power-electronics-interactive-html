@@ -1,5 +1,5 @@
 Interactive HTML Learning Resources for Power Electronics
-Third-party references and notices - collection version 1.0
+Third-party references and notices - collection version 1.0.1
 
 The collection licences apply to the original components described in
 LICENSING.txt. External reference works and other third-party material

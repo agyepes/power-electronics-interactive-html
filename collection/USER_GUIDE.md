@@ -4,18 +4,19 @@
 
 Author: Alejandro Gómez Yepes  
 Affiliation: Universidade de Vigo  
-Collection version: 1.0  
-Status: public GitHub release; Zenodo deposit pending  
-First public release date: 2026-10-07  
-Zenodo DOI: pending  
+Collection version: 1.0.1  
+Release date: 2026-10-10  
+First collection release: 2026-10-07  
+Zenodo version DOI: [10.5281/zenodo.23284179](https://doi.org/10.5281/zenodo.23284179)  
+Collection concept DOI: [10.5281/zenodo.23244290](https://doi.org/10.5281/zenodo.23244290)  
 Online collection: [https://agyepes.github.io/power-electronics-interactive-html/](https://agyepes.github.io/power-electronics-interactive-html/)  
-Archived GitHub release: [version 1.0](https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0)
+Archived release: [Zenodo](https://zenodo.org/records/23284179) · [GitHub version 1.0.1](https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0.1)
 
 Start from [index.html](index.html). The 13 laboratories run in a browser and can be used online or from an extracted download. Keep an exported copy of your work: browser saving is convenient, but it is not a portable backup.
 
 ### Open the collection
 
-For online use, open the [collection website](https://agyepes.github.io/power-electronics-interactive-html/). For offline use, obtain the [complete version 1.0 ZIP](https://github.com/agyepes/power-electronics-interactive-html/releases/download/v1.0/Interactive_HTML_Learning_Resources_for_Power_Electronics_v1.0.zip) from the [GitHub release](https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0) and follow these steps:
+For online use, open the [collection website](https://agyepes.github.io/power-electronics-interactive-html/). For offline use, obtain the [complete version 1.0.1 ZIP](https://github.com/agyepes/power-electronics-interactive-html/releases/download/v1.0.1/Interactive_HTML_Learning_Resources_for_Power_Electronics_v1.0.1.zip) from the [GitHub release](https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0.1) and follow these steps:
 
 1. Extract the whole downloaded collection into a normal folder before opening it. Keep the delivered filenames and all files together. Opening an HTML inside a ZIP preview can prevent the collection links from working.
 2. Open [index.html](index.html) in a browser with JavaScript enabled. Use **Go to the laboratories** and choose a resource. You can also open a numbered HTML directly.
@@ -58,7 +59,7 @@ Browser work depends on the browser profile and the storage context. Moving or r
 
 For laboratory 06, choose the **Advanced** level to reach the waveform and metric CSV controls. In laboratory 02, each model has its own CSV control. Laboratory 01 and laboratory 03 provide their work in TXT rather than a separate numerical CSV.
 
-Exports include a laboratory identifier and the internal HTML release identifier, distinct from collection version 1.0. Keep the generated filename to help identify the export. A date in an exported filename is the export date, not the collection publication date.
+Exports include a laboratory identifier and the internal HTML release identifier, distinct from collection version 1.0.1. Keep the generated filename to help identify the export. A date in an exported filename is the export date, not the collection publication date.
 
 Import CSV files into a spreadsheet using comma-separated fields and a decimal point. Read the header and metadata rows for units and definitions. Some exports include extra rows at switching events, one-sided limits or distinct repeating intervals; do not assume that every time step is uniform. Undefined physical ratios can have blank entries as described by the laboratory; they should not be converted automatically to zero.
 
