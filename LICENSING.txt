@@ -1,5 +1,5 @@
 Interactive HTML Learning Resources for Power Electronics
-Licensing and reuse - collection version 1.0
+Licensing and reuse - collection version 1.0.1
 
 Author: Alejandro Gómez Yepes
 Affiliation: Universidade de Vigo
@@ -38,7 +38,7 @@ https://creativecommons.org/licenses/by/4.0/legalcode.en
 
 Suggested attribution for an unchanged resource:
 Alejandro Gómez Yepes, Universidade de Vigo. Interactive HTML Learning
-Resources for Power Electronics, collection version 1.0. Educational content
+Resources for Power Electronics, collection version 1.0.1. Educational content
 and diagrams: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
 Add the laboratory title and the published source URL or DOI when available.
 For an adaptation, also identify what you changed. This is an example, not

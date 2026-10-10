@@ -4,16 +4,17 @@
 
 Author: Alejandro Gómez Yepes  
 Affiliation: Universidade de Vigo  
-Collection version: 1.0  
-Status: public GitHub release; Zenodo deposit pending  
-First public release date: 2026-10-07  
-Zenodo DOI: pending  
+Collection version: 1.0.1  
+Release date: 2026-10-10  
+First collection release: 2026-10-07  
+Zenodo version DOI: [10.5281/zenodo.23284179](https://doi.org/10.5281/zenodo.23284179)  
+Collection concept DOI: [10.5281/zenodo.23244290](https://doi.org/10.5281/zenodo.23244290)  
 Online collection: [https://agyepes.github.io/power-electronics-interactive-html/](https://agyepes.github.io/power-electronics-interactive-html/)  
-Archived GitHub release: [version 1.0](https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0)
+Archived release: [Zenodo](https://zenodo.org/records/23284179) · [GitHub version 1.0.1](https://github.com/agyepes/power-electronics-interactive-html/releases/tag/v1.0.1)
 
 This collection supports university-level Power Electronics teaching through interactive explanations, calculations, plots, guided investigations and self-assessment. It is intended for students, instructors preparing demonstrations or guided activities, and independent learners with basic circuit knowledge.
 
-### Scope of version 1.0
+### Scope of version 1.0.1
 
 The collection contains **13 laboratories and one laboratory homepage**. Its topics are power semiconductor devices, control and protection, mean/RMS values, Fourier harmonics, balanced three-phase voltages, four diode rectifiers and four SCR rectifiers. The accompanying documentation page is a guide, not an additional laboratory.
 
@@ -79,6 +80,8 @@ Start from [index.html](index.html) and use the [user guide](USER_GUIDE.md). Not
 
 ### Prepublication verification
 
+Version 1.0.1 corrects the publication documentation and collection labels. It retains the same educational material and application logic reviewed for version 1.0. The earlier checks below describe that review; a metadata update does not extend its browser or numerical coverage.
+
 The recorded educational review on 6 October 2026 checked independent analytical reference cases, all 194 English self-assessment questions, and numerical/sign equivalence and actual grading across EN/ES/GL. Browser checks covered Chrome 154.0.8037.98 and Microsoft Edge 154.0.4258.53, narrow layouts, printing/PDF, actual exports, local HTTP and extracted offline use.
 
 The later six-line/phase-visibility revisions to laboratories 09 and 13 were checked separately in Chrome 154.0.8037.98, including exports, printing and narrow/expanded views. Those specific later plot revisions have not been retested in Edge. The documentation preparation in Chrome 155.0.8059.39 checked notes and submitted-answer retention in all 13 laboratories, 14 actual TXT exports and 25 actual CSV exports against the current HTMLs. It also checked the documentation and homepage through local HTTP and extracted offline use, in light/dark layouts at widths from 320 to 1440 pixels, and their native browser PDF output.
@@ -91,4 +94,4 @@ Alejandro Gómez Yepes is the named author, affiliated with Universidade de Vigo
 
 Original educational content, diagrams, explanatory documentation and collection metadata use CC BY 4.0; original implementation code uses MIT. The scopes are component-specific and apply within the author's rights. Student-authored work and third-party material have their own rights. See [LICENSING.txt](LICENSING.txt), [LICENSE-CONTENT.txt](LICENSE-CONTENT.txt), [LICENSE-CODE.txt](LICENSE-CODE.txt) and [THIRD_PARTY_NOTICES.txt](THIRD_PARTY_NOTICES.txt).
 
-Use [CITATION.md](CITATION.md) to cite the collection and [CHANGELOG.md](CHANGELOG.md) to identify the prepared release. [MANIFEST.json](MANIFEST.json) and [SHA256SUMS.txt](SHA256SUMS.txt) identify this package's exact file bytes. Publication date, DOI and public URLs remain pending.
+Use [CITATION.md](CITATION.md) to cite the collection and [CHANGELOG.md](CHANGELOG.md) to identify the release history. [MANIFEST.json](MANIFEST.json) and [SHA256SUMS.txt](SHA256SUMS.txt) identify this package's exact file bytes. This version was released on 10 October 2026; its archived citation is [10.5281/zenodo.23284179](https://doi.org/10.5281/zenodo.23284179).
